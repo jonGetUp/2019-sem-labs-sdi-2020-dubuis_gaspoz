@@ -1,0 +1,39 @@
+version "1.1"
+HDSTool (HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "QuestaSim Compile"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_questasim_compile.bmp"
+hasBitmap 1
+tooltip "Runs QuestaSim compilation"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runnableObject"
+"QuestaSimCompiler"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)

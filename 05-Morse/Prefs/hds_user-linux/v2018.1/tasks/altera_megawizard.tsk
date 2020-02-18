@@ -1,0 +1,39 @@
+version "1.1"
+HDSTool (HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Altera MegaWizard"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_alteramegawizard.bmp"
+hasBitmap 1
+tooltip "Creates Altera Megawizard components"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+"\"%(p)\" %(library)"
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runnableObject"
+"AlteraMegaWizard"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)

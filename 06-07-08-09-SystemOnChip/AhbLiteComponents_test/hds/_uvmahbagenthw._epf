@@ -1,0 +1,2 @@
+DEFAULT_FILE atom uvm@ahb@agent@hw/struct.bd
+DEFAULT_ARCHITECTURE atom struct

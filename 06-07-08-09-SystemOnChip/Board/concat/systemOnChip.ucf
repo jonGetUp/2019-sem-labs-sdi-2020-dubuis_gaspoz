@@ -1,0 +1,19 @@
+#-------------------------------------------------------------------------------
+# Clock and reset
+#
+NET "clock"       LOC = "A10";
+NET "reset_N"     LOC = "D3" | PULLUP;
+
+#-------------------------------------------------------------------------------
+# Analog outputs
+#
+NET "xOut"        LOC = "G4"   | IOSTANDARD = LVTTL | DRIVE = 2 | SLEW = SLOW;
+NET "yOut"        LOC = "G5"   | IOSTANDARD = LVTTL | DRIVE = 2 | SLEW = SLOW;
+#NET "xOut"        LOC = "G4" ;
+#NET "yOut"        LOC = "G5" ;
+
+#-------------------------------------------------------------------------------
+# Trigger output
+#
+NET "triggerOut"  LOC = "D2"    | IOSTANDARD = LVTTL | DRIVE = 2 | SLEW = SLOW;
+#NET "triggerOut"  LOC = "D2" ;

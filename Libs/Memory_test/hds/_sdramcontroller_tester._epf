@@ -1,0 +1,2 @@
+DEFAULT_FILE atom sdramController_tester_test.vhd
+DEFAULT_ARCHITECTURE atom test

@@ -1,0 +1,2 @@
+DEFAULT_FILE atom cordic_tester_test.vhd
+DEFAULT_ARCHITECTURE atom test

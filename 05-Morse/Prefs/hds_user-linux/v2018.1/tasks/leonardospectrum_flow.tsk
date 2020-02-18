@@ -1,0 +1,50 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "LeonardoSpectrum Flow"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_leonardo.bmp"
+hasBitmap 1
+tooltip "Generate and runs the entire LeonardoSpectrum flow"
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTaskRef
+TaskName "Generate"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:Generate"
+)
+(HDSTaskRef
+TaskName "LeonardoSpectrum"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:LeonardoSpectrum"
+)
+]
+)

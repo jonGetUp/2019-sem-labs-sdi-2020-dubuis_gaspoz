@@ -1,0 +1,2 @@
+DEFAULT_FILE atom rom_mapped.vhd
+DEFAULT_ARCHITECTURE atom mapped

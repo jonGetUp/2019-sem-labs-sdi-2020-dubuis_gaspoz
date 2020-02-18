@@ -1,0 +1,94 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "Xilinx Synthesis Tool"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_xilinx_synthesis.bmp"
+hasBitmap 1
+tooltip "Runs Xilinx ISE Synthesis Tool data preparation and invokes tool"
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "XST Prepare Data"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_xilinx_synthesis.bmp"
+hasBitmap 1
+tooltip "Does data preparation for Xilinx ISE Synthesis Tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"1"
+"runnableObject"
+"XSTDataPrep"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "XST Invoke"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_xilinx_synthesis.bmp"
+hasBitmap 1
+tooltip "Invokes Xilinx ISE Synthesis Tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runnableObject"
+"XSTInvoke"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

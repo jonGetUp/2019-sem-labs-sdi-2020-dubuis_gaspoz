@@ -1,0 +1,45 @@
+version "1.1"
+HDSTool (HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Register Assistant"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_registerassistant.bmp"
+hasBitmap 1
+tooltip "Invokes Register Assistant"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"1"
+"customPrompt"
+""
+"initialDir"
+""
+"noNeedForThroughDesignRoot"
+"1"
+"noNeedForUseViewSpecificSettings"
+"1"
+"noSettingsDlg"
+"1"
+"promptForRunSettings"
+"0"
+"runnableObject"
+"RegisterAssistantInvoke"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 1
+enabled 1
+hierDepth 3
+)

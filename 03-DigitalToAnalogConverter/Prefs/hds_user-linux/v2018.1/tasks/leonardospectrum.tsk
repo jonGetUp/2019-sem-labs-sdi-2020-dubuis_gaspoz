@@ -1,0 +1,101 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "LeonardoSpectrum"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_leonardo.bmp"
+hasBitmap 1
+tooltip "Runs LeonardoSpectrum data preparation and invokes tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"flowSettingsDlg"
+"$HDS_HOME/resources/tcl/plugins/dialogs/SpectrumCombinedDlg.tbc"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "LeonardoSpectrum Prepare Data"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_leonardo.bmp"
+hasBitmap 1
+tooltip "Does data preparation for LeonardoSpectrum"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"1"
+"runnableObject"
+"SpectrumDataPrep"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "LeonardoSpectrum Synthesis Invoke"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_leonardo.bmp"
+hasBitmap 1
+tooltip "Invokes the LeonardoSpectrum Synthesis tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runnableObject"
+"SpectrumInvoke"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

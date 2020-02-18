@@ -1,0 +1,7 @@
+ARCHITECTURE sim OF buff IS
+BEGIN
+
+  out1 <= in1;
+
+END ARCHITECTURE sim;
+

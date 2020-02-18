@@ -1,0 +1,3 @@
+DEFAULT_FILE atom pipelineAdder_studentVersion.vhd
+DEFAULT_ARCHITECTURE atom studentVersion
+TOP_MARKER atom 1

@@ -1,0 +1,101 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "Precision Synthesis"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_precision.bmp"
+hasBitmap 1
+tooltip "Runs Precision data preparation and invokes tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"flowSettingsDlg"
+"$HDS_HOME/resources/tcl/plugins/dialogs/PrecisionSynthesisCombinedDlg.tbc"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Precision Synthesis Prepare Data"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_precision.bmp"
+hasBitmap 1
+tooltip "Does data preparation for Precision Synthesis"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"1"
+"runnableObject"
+"PrecisionSynthesisDataPrep"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Precision Synthesis Invoke"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_precision.bmp"
+hasBitmap 1
+tooltip "Invokes the Precision Synthesis tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runnableObject"
+"PrecisionSynthesisInvoke"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

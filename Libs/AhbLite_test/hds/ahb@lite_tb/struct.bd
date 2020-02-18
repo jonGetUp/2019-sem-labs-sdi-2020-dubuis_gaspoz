@@ -1,0 +1,7343 @@
+DocumentHdrVersion "1.1"
+Header (DocumentHdr
+version 2
+dialect 11
+dmPackageRefs [
+(DmPackageRef
+library "ieee"
+unitName "std_logic_1164"
+)
+(DmPackageRef
+library "ieee"
+unitName "numeric_std"
+)
+(DmPackageRef
+library "AhbLite"
+unitName "ahbLite"
+)
+]
+instances [
+(Instance
+name "I_mst"
+duLibraryName "AhbLite"
+duName "ahbMasterInterface"
+elements [
+]
+mwi 0
+uid 12494,0
+)
+(Instance
+name "I_mux"
+duLibraryName "AhbLite"
+duName "ahbMultiplexor"
+elements [
+]
+mwi 0
+uid 12583,0
+)
+(Instance
+name "I_dec"
+duLibraryName "AhbLite"
+duName "ahbDecoder"
+elements [
+(GiElement
+name "ahbMemoryLocation"
+type "ahbMemoryLocationVector"
+value "ahbMemoryLocation"
+)
+]
+mwi 0
+uid 12620,0
+)
+(Instance
+name "I_connT"
+duLibraryName "AhbLite"
+duName "ahbMuxConnector"
+elements [
+(GiElement
+name "index"
+type "positive"
+value "periph1Index"
+)
+]
+mwi 0
+uid 12637,0
+)
+(Instance
+name "I_connAdc"
+duLibraryName "AhbLite"
+duName "ahbMuxConnector"
+elements [
+(GiElement
+name "index"
+type "positive"
+value "periph2Index"
+)
+]
+mwi 0
+uid 12678,0
+)
+(Instance
+name "I_tester"
+duLibraryName "AhbLite_test"
+duName "ahbLite_tester"
+elements [
+(GiElement
+name "periph2BaseAddress"
+type "natural"
+value "16#10#"
+)
+]
+mwi 0
+uid 13243,0
+)
+]
+libraryRefs [
+"ieee"
+"AhbLite"
+]
+)
+version "32.1"
+appVersion "2019.2 (Build 5)"
+noEmbeddedEditors 1
+model (BlockDiag
+VExpander (VariableExpander
+vvMap [
+(vvPair
+variable " "
+value " "
+)
+(vvPair
+variable "HDLDir"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hdl"
+)
+(vvPair
+variable "HDSDir"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds"
+)
+(vvPair
+variable "SideDataDesignDir"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds\\ahb@lite_tb\\struct.bd.info"
+)
+(vvPair
+variable "SideDataUserDir"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds\\ahb@lite_tb\\struct.bd.user"
+)
+(vvPair
+variable "SourceDir"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds"
+)
+(vvPair
+variable "appl"
+value "HDL Designer"
+)
+(vvPair
+variable "arch_name"
+value "struct"
+)
+(vvPair
+variable "asm_file"
+value "nanoTest.asm"
+)
+(vvPair
+variable "concat_file"
+value "concatenated"
+)
+(vvPair
+variable "config"
+value "%(unit)_%(view)_config"
+)
+(vvPair
+variable "d"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds\\ahb@lite_tb"
+)
+(vvPair
+variable "d_logical"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds\\ahbLite_tb"
+)
+(vvPair
+variable "date"
+value "11.11.2019"
+)
+(vvPair
+variable "day"
+value "Mon"
+)
+(vvPair
+variable "day_long"
+value "Monday"
+)
+(vvPair
+variable "dd"
+value "11"
+)
+(vvPair
+variable "designName"
+value "$DESIGN_NAME"
+)
+(vvPair
+variable "entity_name"
+value "ahbLite_tb"
+)
+(vvPair
+variable "ext"
+value "<TBD>"
+)
+(vvPair
+variable "f"
+value "struct.bd"
+)
+(vvPair
+variable "f_logical"
+value "struct.bd"
+)
+(vvPair
+variable "f_noext"
+value "struct"
+)
+(vvPair
+variable "graphical_source_author"
+value "silvan.zahno"
+)
+(vvPair
+variable "graphical_source_date"
+value "11.11.2019"
+)
+(vvPair
+variable "graphical_source_group"
+value "UNKNOWN"
+)
+(vvPair
+variable "graphical_source_host"
+value "WE6996"
+)
+(vvPair
+variable "graphical_source_time"
+value "07:34:52"
+)
+(vvPair
+variable "group"
+value "UNKNOWN"
+)
+(vvPair
+variable "host"
+value "WE6996"
+)
+(vvPair
+variable "language"
+value "VHDL"
+)
+(vvPair
+variable "library"
+value "AhbLite_test"
+)
+(vvPair
+variable "library_downstream_ModelSim"
+value "D:\\Users\\ELN_labs\\VHDL_comp"
+)
+(vvPair
+variable "library_downstream_ModelSimCompiler"
+value "$SCRATCH_DIR/ElN/Libraries/AhbLite_test/work"
+)
+(vvPair
+variable "mm"
+value "11"
+)
+(vvPair
+variable "module_name"
+value "ahbLite_tb"
+)
+(vvPair
+variable "month"
+value "Nov"
+)
+(vvPair
+variable "month_long"
+value "November"
+)
+(vvPair
+variable "p"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds\\ahb@lite_tb\\struct.bd"
+)
+(vvPair
+variable "p_logical"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\AhbLite_test\\hds\\ahbLite_tb\\struct.bd"
+)
+(vvPair
+variable "package_name"
+value "<Undefined Variable>"
+)
+(vvPair
+variable "project_name"
+value "hds"
+)
+(vvPair
+variable "series"
+value "HDL Designer Series"
+)
+(vvPair
+variable "task_ADMS"
+value "<TBD>"
+)
+(vvPair
+variable "task_DesignCompilerPath"
+value "<TBD>"
+)
+(vvPair
+variable "task_HDSPath"
+value "$HDS_HOME"
+)
+(vvPair
+variable "task_ISEBinPath"
+value "$ISE_HOME"
+)
+(vvPair
+variable "task_ISEPath"
+value "$SCRATCH_DIR\\$DESIGN_NAME\\$ISE_WORK_DIR"
+)
+(vvPair
+variable "task_LeonardoPath"
+value "<TBD>"
+)
+(vvPair
+variable "task_ModelSimPath"
+value "$MODELSIM_HOME\\win32"
+)
+(vvPair
+variable "task_NC"
+value "<TBD>"
+)
+(vvPair
+variable "task_NC-SimPath"
+value "<TBD>"
+)
+(vvPair
+variable "task_PrecisionRTLPath"
+value "<TBD>"
+)
+(vvPair
+variable "task_QuestaSimPath"
+value "<TBD>"
+)
+(vvPair
+variable "task_VCSPath"
+value "<TBD>"
+)
+(vvPair
+variable "this_ext"
+value "bd"
+)
+(vvPair
+variable "this_file"
+value "struct"
+)
+(vvPair
+variable "this_file_logical"
+value "struct"
+)
+(vvPair
+variable "time"
+value "07:34:52"
+)
+(vvPair
+variable "unit"
+value "ahbLite_tb"
+)
+(vvPair
+variable "user"
+value "silvan.zahno"
+)
+(vvPair
+variable "version"
+value "2019.2 (Build 5)"
+)
+(vvPair
+variable "view"
+value "struct"
+)
+(vvPair
+variable "year"
+value "2019"
+)
+(vvPair
+variable "yy"
+value "19"
+)
+]
+)
+LanguageMgr "Vhdl2008LangMgr"
+uid 198,0
+optionalChildren [
+*1 (Grouping
+uid 1487,0
+optionalChildren [
+*2 (CommentText
+uid 1489,0
+shape (Rectangle
+uid 1490,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "173000,121000,192000,123000"
+)
+oxt "45000,22000,64000,24000"
+text (MLText
+uid 1491,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "173200,121400,188600,122600"
+st "
+<enter project name here>
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 18600
+)
+position 1
+ignorePrefs 1
+)
+*3 (CommentText
+uid 1492,0
+shape (Rectangle
+uid 1493,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "141000,121000,167000,123000"
+)
+oxt "13000,22000,39000,24000"
+text (MLText
+uid 1494,0
+va (VaSet
+fg "32768,0,0"
+font "Arial,12,1"
+)
+xt "148250,121250,159750,122750"
+st "
+<company name>
+"
+ju 0
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 25600
+)
+position 1
+ignorePrefs 1
+)
+*4 (CommentText
+uid 1495,0
+shape (Rectangle
+uid 1496,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "146000,127000,167000,129000"
+)
+oxt "18000,28000,39000,30000"
+text (MLText
+uid 1497,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "146200,127400,164600,128600"
+st "
+by %user on %dd %month %year
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 20600
+)
+position 1
+ignorePrefs 1
+)
+*5 (CommentText
+uid 1498,0
+shape (Rectangle
+uid 1499,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "167000,121000,173000,123000"
+)
+oxt "39000,22000,45000,24000"
+text (MLText
+uid 1500,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "167200,121400,171900,122600"
+st "
+Project:
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 5600
+)
+position 1
+ignorePrefs 1
+)
+*6 (CommentText
+uid 1501,0
+shape (Rectangle
+uid 1502,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "146000,123000,167000,125000"
+)
+oxt "18000,24000,39000,26000"
+text (MLText
+uid 1503,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "146200,123400,161400,124600"
+st "
+<enter diagram title here>
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 20600
+)
+position 1
+ignorePrefs 1
+)
+*7 (CommentText
+uid 1504,0
+shape (Rectangle
+uid 1505,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "141000,123000,146000,125000"
+)
+oxt "13000,24000,18000,26000"
+text (MLText
+uid 1506,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "141200,123400,144600,124600"
+st "
+Title:
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 4600
+)
+position 1
+ignorePrefs 1
+)
+*8 (CommentText
+uid 1507,0
+shape (Rectangle
+uid 1508,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "141000,125000,146000,127000"
+)
+oxt "13000,26000,18000,28000"
+text (MLText
+uid 1509,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "141200,125400,144600,126600"
+st "
+Path:
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 4600
+)
+position 1
+ignorePrefs 1
+)
+*9 (CommentText
+uid 1510,0
+shape (Rectangle
+uid 1511,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "167000,123000,192000,129000"
+)
+oxt "39000,24000,64000,30000"
+text (MLText
+uid 1512,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "167200,123200,181300,124400"
+st "
+<enter comments here>
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 5600
+visibleWidth 24600
+)
+ignorePrefs 1
+)
+*10 (CommentText
+uid 1513,0
+shape (Rectangle
+uid 1514,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "146000,125000,167000,127000"
+)
+oxt "18000,26000,39000,28000"
+text (MLText
+uid 1515,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "146200,125400,163900,126600"
+st "
+%library/%unit/%view
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 20600
+)
+position 1
+ignorePrefs 1
+)
+*11 (CommentText
+uid 1516,0
+shape (Rectangle
+uid 1517,0
+sl 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+)
+xt "141000,127000,146000,129000"
+)
+oxt "13000,28000,18000,30000"
+text (MLText
+uid 1518,0
+va (VaSet
+fg "0,0,32768"
+bg "0,0,32768"
+)
+xt "141200,127400,145500,128600"
+st "
+Edited:
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 1600
+visibleWidth 4600
+)
+position 1
+ignorePrefs 1
+)
+]
+shape (GroupingShape
+uid 1488,0
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineStyle 2
+lineWidth 1
+)
+xt "141000,121000,192000,129000"
+)
+oxt "13000,22000,64000,30000"
+)
+*12 (SaComponent
+uid 12494,0
+optionalChildren [
+*13 (CptPort
+uid 12503,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12504,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "60250,63625,61000,64375"
+)
+tg (CPTG
+uid 12505,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12506,0
+va (VaSet
+)
+xt "62000,63400,65400,64600"
+st "clock"
+blo "62000,64400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "clock"
+t "std_ulogic"
+o 1
+)
+)
+)
+*14 (CptPort
+uid 12507,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12508,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "60250,65625,61000,66375"
+)
+tg (CPTG
+uid 12509,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12510,0
+va (VaSet
+)
+xt "62000,65400,65300,66600"
+st "reset"
+blo "62000,66400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "reset"
+t "std_ulogic"
+o 8
+)
+)
+)
+*15 (CptPort
+uid 12511,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12512,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "60250,47625,61000,48375"
+)
+tg (CPTG
+uid 12513,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12514,0
+va (VaSet
+)
+xt "62000,47400,69800,48600"
+st "pReadStrobe"
+blo "62000,48400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "pReadStrobe"
+t "std_uLogic"
+o 7
+)
+)
+)
+*16 (CptPort
+uid 12515,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12516,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "60250,49625,61000,50375"
+)
+tg (CPTG
+uid 12517,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12518,0
+va (VaSet
+)
+xt "62000,49400,69900,50600"
+st "pWriteStrobe"
+blo "62000,50400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "pWriteStrobe"
+t "std_uLogic"
+o 9
+)
+)
+)
+*17 (CptPort
+uid 12519,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12520,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "60250,41625,61000,42375"
+)
+tg (CPTG
+uid 12521,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12522,0
+va (VaSet
+)
+xt "62000,41400,67500,42600"
+st "pAddress"
+blo "62000,42400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "pAddress"
+t "unsigned"
+b "( ahbAddressBitNb-1 DOWNTO 0 )"
+o 2
+)
+)
+)
+*18 (CptPort
+uid 12523,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12524,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "60250,43625,61000,44375"
+)
+tg (CPTG
+uid 12525,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12526,0
+va (VaSet
+)
+xt "62000,43400,67600,44600"
+st "pDataOut"
+blo "62000,44400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "pDataOut"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 3
+)
+)
+)
+*19 (CptPort
+uid 12527,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12528,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "60250,45625,61000,46375"
+)
+tg (CPTG
+uid 12529,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12530,0
+va (VaSet
+)
+xt "62000,45400,66800,46600"
+st "pDataIn"
+blo "62000,46400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "pDataIn"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 10
+)
+)
+)
+*20 (CptPort
+uid 12531,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12532,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,41625,77750,42375"
+)
+tg (CPTG
+uid 12533,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12534,0
+va (VaSet
+)
+xt "72300,41400,76000,42600"
+st "hAddr"
+ju 2
+blo "76000,42400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hAddr"
+t "unsigned"
+b "( ahbAddressBitNb-1 DOWNTO 0 )"
+o 11
+)
+)
+)
+*21 (CptPort
+uid 12535,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12536,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,43625,77750,44375"
+)
+tg (CPTG
+uid 12537,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12538,0
+va (VaSet
+)
+xt "71400,43400,76000,44600"
+st "hWData"
+ju 2
+blo "76000,44400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hWData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 19
+)
+)
+)
+*22 (CptPort
+uid 12539,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12540,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,57625,77750,58375"
+)
+tg (CPTG
+uid 12541,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12542,0
+va (VaSet
+)
+xt "71600,57400,76000,58600"
+st "hRData"
+ju 2
+blo "76000,58400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hRData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 4
+)
+)
+)
+*23 (CptPort
+uid 12543,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12544,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,47625,77750,48375"
+)
+tg (CPTG
+uid 12545,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12546,0
+va (VaSet
+)
+xt "72100,47400,76000,48600"
+st "hWrite"
+ju 2
+blo "76000,48400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hWrite"
+t "std_uLogic"
+o 20
+)
+)
+)
+*24 (CptPort
+uid 12547,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12548,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,49625,77750,50375"
+)
+tg (CPTG
+uid 12549,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12550,0
+va (VaSet
+)
+xt "72600,49400,76000,50600"
+st "hSize"
+ju 2
+blo "76000,50400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hSize"
+t "std_ulogic_vector"
+b "(ahbSizeBitNb-1 DOWNTO 0)"
+o 17
+)
+)
+)
+*25 (CptPort
+uid 12551,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12552,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,51625,77750,52375"
+)
+tg (CPTG
+uid 12553,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12554,0
+va (VaSet
+)
+xt "72000,51400,76000,52600"
+st "hBurst"
+ju 2
+blo "76000,52400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hBurst"
+t "std_ulogic_vector"
+b "(ahbBurstBitNb-1 DOWNTO 0)"
+o 12
+)
+)
+)
+*26 (CptPort
+uid 12555,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12556,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,53625,77750,54375"
+)
+tg (CPTG
+uid 12557,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12558,0
+va (VaSet
+)
+xt "72600,53400,76000,54600"
+st "hProt"
+ju 2
+blo "76000,54400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hProt"
+t "std_ulogic_vector"
+b "(ahbProtBitNb-1 DOWNTO 0)"
+o 15
+)
+)
+)
+*27 (CptPort
+uid 12559,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12560,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,45625,77750,46375"
+)
+tg (CPTG
+uid 12561,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12562,0
+va (VaSet
+)
+xt "71800,45400,76000,46600"
+st "hTrans"
+ju 2
+blo "76000,46400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hTrans"
+t "std_ulogic_vector"
+b "(ahbTransBitNb-1 DOWNTO 0)"
+o 18
+)
+)
+)
+*28 (CptPort
+uid 12563,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12564,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,55625,77750,56375"
+)
+tg (CPTG
+uid 12565,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12566,0
+va (VaSet
+)
+xt "69800,55400,76000,56600"
+st "hMastLock"
+ju 2
+blo "76000,56400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hMastLock"
+t "std_uLogic"
+o 14
+)
+)
+)
+*29 (CptPort
+uid 12567,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12568,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,59625,77750,60375"
+)
+tg (CPTG
+uid 12569,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12570,0
+va (VaSet
+)
+xt "71600,59400,76000,60600"
+st "hReady"
+ju 2
+blo "76000,60400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hReady"
+t "std_uLogic"
+o 5
+)
+)
+)
+*30 (CptPort
+uid 12571,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12572,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,61625,77750,62375"
+)
+tg (CPTG
+uid 12573,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12574,0
+va (VaSet
+)
+xt "72200,61400,76000,62600"
+st "hResp"
+ju 2
+blo "76000,62400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hResp"
+t "std_uLogic"
+o 6
+)
+)
+)
+*31 (CptPort
+uid 12575,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12576,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,63625,77750,64375"
+)
+tg (CPTG
+uid 12577,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12578,0
+va (VaSet
+)
+xt "73000,63400,76000,64600"
+st "hClk"
+ju 2
+blo "76000,64400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hClk"
+t "std_uLogic"
+o 13
+)
+)
+)
+*32 (CptPort
+uid 12579,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12580,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77000,65625,77750,66375"
+)
+tg (CPTG
+uid 12581,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12582,0
+va (VaSet
+)
+xt "70600,65400,76000,66600"
+st "hReset_n"
+ju 2
+blo "76000,66400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hReset_n"
+t "std_uLogic"
+o 16
+)
+)
+)
+]
+shape (Rectangle
+uid 12495,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "61000,38000,77000,68000"
+)
+oxt "47000,12000,63000,42000"
+ttg (MlTextGroup
+uid 12496,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*33 (Text
+uid 12497,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "61100,67700,65900,68900"
+st "AhbLite"
+blo "61100,68700"
+tm "BdLibraryNameMgr"
+)
+*34 (Text
+uid 12498,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "61100,68900,73300,70100"
+st "ahbMasterInterface"
+blo "61100,69900"
+tm "CptNameMgr"
+)
+*35 (Text
+uid 12499,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "61100,70100,65000,71300"
+st "I_mst"
+blo "61100,71100"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 12500,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 12501,0
+text (MLText
+uid 12502,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "61000,70400,61000,70400"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+uid 13469,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "61250,66250,62750,67750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+portVis (PortSigDisplay
+sTC 0
+sT 1
+)
+archFileType "UNKNOWN"
+)
+*36 (SaComponent
+uid 12583,0
+optionalChildren [
+*37 (CptPort
+uid 12592,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12593,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "117000,77625,117750,78375"
+)
+tg (CPTG
+uid 12594,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12595,0
+va (VaSet
+)
+xt "113100,77400,116000,78600"
+st "hSel"
+ju 2
+blo "116000,78400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hSel"
+t "std_ulogic_vector"
+b "( 1 TO ahbSlaveNb )"
+o 5
+)
+)
+)
+*38 (CptPort
+uid 12596,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12597,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "117000,81625,117750,82375"
+)
+tg (CPTG
+uid 12598,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12599,0
+va (VaSet
+)
+xt "110800,81400,116000,82600"
+st "hRDataV"
+ju 2
+blo "116000,82400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hRDataV"
+t "ahbDataVector"
+o 1
+)
+)
+)
+*39 (CptPort
+uid 12600,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12601,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "100250,83625,101000,84375"
+)
+tg (CPTG
+uid 12602,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12603,0
+va (VaSet
+)
+xt "102000,83400,106400,84600"
+st "hReady"
+blo "102000,84400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hReady"
+t "std_uLogic"
+o 7
+)
+)
+)
+*40 (CptPort
+uid 12604,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12605,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "100250,85625,101000,86375"
+)
+tg (CPTG
+uid 12606,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12607,0
+va (VaSet
+)
+xt "102000,85400,105800,86600"
+st "hResp"
+blo "102000,86400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hResp"
+t "std_uLogic"
+o 3
+)
+)
+)
+*41 (CptPort
+uid 12608,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12609,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "100250,81625,101000,82375"
+)
+tg (CPTG
+uid 12610,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12611,0
+va (VaSet
+)
+xt "102000,81400,106400,82600"
+st "hRData"
+blo "102000,82400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hRData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 6
+)
+)
+)
+*42 (CptPort
+uid 12612,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12613,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "117000,83625,117750,84375"
+)
+tg (CPTG
+uid 12614,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12615,0
+va (VaSet
+)
+xt "110800,83400,116000,84600"
+st "hReadyV"
+ju 2
+blo "116000,84400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hReadyV"
+t "std_logic_vector"
+b "(1 to ahbSlaveNb)"
+o 2
+)
+)
+)
+*43 (CptPort
+uid 12616,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12617,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "117000,85625,117750,86375"
+)
+tg (CPTG
+uid 12618,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12619,0
+va (VaSet
+)
+xt "111400,85400,116000,86600"
+st "hRespV"
+ju 2
+blo "116000,86400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hRespV"
+t "std_logic_vector"
+b "(1 to ahbSlaveNb)"
+o 4
+)
+)
+)
+]
+shape (Rectangle
+uid 12584,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "101000,74000,117000,90000"
+)
+oxt "40000,9000,56000,25000"
+ttg (MlTextGroup
+uid 12585,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*44 (Text
+uid 12586,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "101100,89700,105900,90900"
+st "AhbLite"
+blo "101100,90700"
+tm "BdLibraryNameMgr"
+)
+*45 (Text
+uid 12587,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "101100,90900,110700,92100"
+st "ahbMultiplexor"
+blo "101100,91900"
+tm "CptNameMgr"
+)
+*46 (Text
+uid 12588,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "101100,92100,105400,93300"
+st "I_mux"
+blo "101100,93100"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 12589,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 12590,0
+text (MLText
+uid 12591,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "101000,92400,101000,92400"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+uid 13470,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "101250,88250,102750,89750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+portVis (PortSigDisplay
+sTC 0
+sT 1
+)
+archFileType "UNKNOWN"
+)
+*47 (SaComponent
+uid 12620,0
+optionalChildren [
+*48 (CptPort
+uid 12629,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12630,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "100250,61625,101000,62375"
+)
+tg (CPTG
+uid 12631,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12632,0
+va (VaSet
+)
+xt "102000,61400,105700,62600"
+st "hAddr"
+blo "102000,62400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hAddr"
+t "unsigned"
+b "( ahbAddressBitNb-1 DOWNTO 0 )"
+o 1
+)
+)
+)
+*49 (CptPort
+uid 12633,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12634,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "117000,61625,117750,62375"
+)
+tg (CPTG
+uid 12635,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12636,0
+va (VaSet
+)
+xt "113100,61400,116000,62600"
+st "hSel"
+ju 2
+blo "116000,62400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hSel"
+t "std_ulogic_vector"
+b "(1 to ahbSlaveNb)"
+o 2
+)
+)
+)
+]
+shape (Rectangle
+uid 12621,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "101000,58000,117000,66000"
+)
+oxt "39000,14000,55000,22000"
+ttg (MlTextGroup
+uid 12622,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*50 (Text
+uid 12623,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "101100,65700,105900,66900"
+st "AhbLite"
+blo "101100,66700"
+tm "BdLibraryNameMgr"
+)
+*51 (Text
+uid 12624,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "101100,66900,109100,68100"
+st "ahbDecoder"
+blo "101100,67900"
+tm "CptNameMgr"
+)
+*52 (Text
+uid 12625,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "101100,68100,104800,69300"
+st "I_dec"
+blo "101100,69100"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 12626,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 12627,0
+text (MLText
+uid 12628,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "101000,68800,138000,69600"
+st "ahbMemoryLocation = ahbMemoryLocation    ( ahbMemoryLocationVector )  "
+)
+header ""
+)
+elements [
+(GiElement
+name "ahbMemoryLocation"
+type "ahbMemoryLocationVector"
+value "ahbMemoryLocation"
+)
+]
+)
+viewicon (ZoomableIcon
+uid 13471,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "101250,64250,102750,65750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+portVis (PortSigDisplay
+sTC 0
+sT 1
+)
+archFileType "UNKNOWN"
+)
+*53 (SaComponent
+uid 12637,0
+optionalChildren [
+*54 (CptPort
+uid 12646,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12647,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,53625,133000,54375"
+)
+tg (CPTG
+uid 12648,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12649,0
+va (VaSet
+)
+xt "134000,53400,137700,54600"
+st "hSelV"
+blo "134000,54400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hSelV"
+t "std_ulogic_vector"
+b "( 1 TO ahbSlaveNb )"
+o 5
+)
+)
+)
+*55 (CptPort
+uid 12650,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12651,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,55625,133000,56375"
+)
+tg (CPTG
+uid 12652,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12653,0
+va (VaSet
+)
+xt "134000,55400,139200,56600"
+st "hRDataV"
+blo "134000,56400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hRDataV"
+t "ahbDataVector"
+o 1
+)
+)
+)
+*56 (CptPort
+uid 12654,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12655,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,57625,149750,58375"
+)
+tg (CPTG
+uid 12656,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12657,0
+va (VaSet
+)
+xt "143600,57400,148000,58600"
+st "hReady"
+ju 2
+blo "148000,58400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hReady"
+t "std_uLogic"
+o 7
+)
+)
+)
+*57 (CptPort
+uid 12658,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12659,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,59625,149750,60375"
+)
+tg (CPTG
+uid 12660,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12661,0
+va (VaSet
+)
+xt "144200,59400,148000,60600"
+st "hResp"
+ju 2
+blo "148000,60400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hResp"
+t "std_uLogic"
+o 3
+)
+)
+)
+*58 (CptPort
+uid 12662,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12663,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,55625,149750,56375"
+)
+tg (CPTG
+uid 12664,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12665,0
+va (VaSet
+)
+xt "143600,55400,148000,56600"
+st "hRData"
+ju 2
+blo "148000,56400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hRData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 6
+)
+)
+)
+*59 (CptPort
+uid 12666,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12667,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,57625,133000,58375"
+)
+tg (CPTG
+uid 12668,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12669,0
+va (VaSet
+)
+xt "134000,57400,139200,58600"
+st "hReadyV"
+blo "134000,58400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hReadyV"
+t "std_logic_vector"
+b "(1 to ahbSlaveNb)"
+o 2
+)
+)
+)
+*60 (CptPort
+uid 12670,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12671,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,59625,133000,60375"
+)
+tg (CPTG
+uid 12672,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12673,0
+va (VaSet
+)
+xt "134000,59400,138600,60600"
+st "hRespV"
+blo "134000,60400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hRespV"
+t "std_logic_vector"
+b "(1 to ahbSlaveNb)"
+o 4
+)
+)
+)
+*61 (CptPort
+uid 12674,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12675,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,53625,149750,54375"
+)
+tg (CPTG
+uid 12676,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12677,0
+va (VaSet
+)
+xt "145100,53400,148000,54600"
+st "hSel"
+ju 2
+blo "148000,54400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hSel"
+t "std_uLogic"
+o 8
+)
+)
+)
+]
+shape (Rectangle
+uid 12638,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "133000,50000,149000,64000"
+)
+oxt "40000,11000,56000,25000"
+ttg (MlTextGroup
+uid 12639,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*62 (Text
+uid 12640,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "133100,63700,137900,64900"
+st "AhbLite"
+blo "133100,64700"
+tm "BdLibraryNameMgr"
+)
+*63 (Text
+uid 12641,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "133100,64900,144500,66100"
+st "ahbMuxConnector"
+blo "133100,65900"
+tm "CptNameMgr"
+)
+*64 (Text
+uid 12642,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "133100,66100,138200,67300"
+st "I_connT"
+blo "133100,67100"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 12643,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 12644,0
+text (MLText
+uid 12645,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "133000,66800,153500,67600"
+st "index = periph1Index    ( positive )  "
+)
+header ""
+)
+elements [
+(GiElement
+name "index"
+type "positive"
+value "periph1Index"
+)
+]
+)
+viewicon (ZoomableIcon
+uid 13472,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "133250,62250,134750,63750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+portVis (PortSigDisplay
+sTC 0
+sT 1
+)
+archFileType "UNKNOWN"
+)
+*65 (SaComponent
+uid 12678,0
+optionalChildren [
+*66 (CptPort
+uid 12687,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12688,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,87625,133000,88375"
+)
+tg (CPTG
+uid 12689,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12690,0
+va (VaSet
+)
+xt "134000,87400,137700,88600"
+st "hSelV"
+blo "134000,88400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hSelV"
+t "std_ulogic_vector"
+b "( 1 TO ahbSlaveNb )"
+o 5
+)
+)
+)
+*67 (CptPort
+uid 12691,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12692,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,89625,133000,90375"
+)
+tg (CPTG
+uid 12693,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12694,0
+va (VaSet
+)
+xt "134000,89400,139200,90600"
+st "hRDataV"
+blo "134000,90400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hRDataV"
+t "ahbDataVector"
+o 1
+)
+)
+)
+*68 (CptPort
+uid 12695,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12696,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,91625,149750,92375"
+)
+tg (CPTG
+uid 12697,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12698,0
+va (VaSet
+)
+xt "143600,91400,148000,92600"
+st "hReady"
+ju 2
+blo "148000,92400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hReady"
+t "std_uLogic"
+o 7
+)
+)
+)
+*69 (CptPort
+uid 12699,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12700,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,93625,149750,94375"
+)
+tg (CPTG
+uid 12701,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12702,0
+va (VaSet
+)
+xt "144200,93400,148000,94600"
+st "hResp"
+ju 2
+blo "148000,94400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hResp"
+t "std_uLogic"
+o 3
+)
+)
+)
+*70 (CptPort
+uid 12703,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12704,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,89625,149750,90375"
+)
+tg (CPTG
+uid 12705,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12706,0
+va (VaSet
+)
+xt "143600,89400,148000,90600"
+st "hRData"
+ju 2
+blo "148000,90400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hRData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 6
+)
+)
+)
+*71 (CptPort
+uid 12707,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12708,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,91625,133000,92375"
+)
+tg (CPTG
+uid 12709,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12710,0
+va (VaSet
+)
+xt "134000,91400,139200,92600"
+st "hReadyV"
+blo "134000,92400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hReadyV"
+t "std_logic_vector"
+b "(1 to ahbSlaveNb)"
+o 2
+)
+)
+)
+*72 (CptPort
+uid 12711,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12712,0
+ro 270
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "132250,93625,133000,94375"
+)
+tg (CPTG
+uid 12713,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 12714,0
+va (VaSet
+)
+xt "134000,93400,138600,94600"
+st "hRespV"
+blo "134000,94400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hRespV"
+t "std_logic_vector"
+b "(1 to ahbSlaveNb)"
+o 4
+)
+)
+)
+*73 (CptPort
+uid 12715,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 12716,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "149000,87625,149750,88375"
+)
+tg (CPTG
+uid 12717,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 12718,0
+va (VaSet
+)
+xt "145100,87400,148000,88600"
+st "hSel"
+ju 2
+blo "148000,88400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hSel"
+t "std_uLogic"
+o 8
+)
+)
+)
+]
+shape (Rectangle
+uid 12679,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "133000,84000,149000,98000"
+)
+oxt "40000,11000,56000,25000"
+ttg (MlTextGroup
+uid 12680,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*74 (Text
+uid 12681,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "133100,97700,137900,98900"
+st "AhbLite"
+blo "133100,98700"
+tm "BdLibraryNameMgr"
+)
+*75 (Text
+uid 12682,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "133100,98900,144500,100100"
+st "ahbMuxConnector"
+blo "133100,99900"
+tm "CptNameMgr"
+)
+*76 (Text
+uid 12683,0
+va (VaSet
+font "Verdana,10,0"
+)
+xt "133100,100100,139400,101300"
+st "I_connAdc"
+blo "133100,101100"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 12684,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 12685,0
+text (MLText
+uid 12686,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "133000,100800,153500,101600"
+st "index = periph2Index    ( positive )  "
+)
+header ""
+)
+elements [
+(GiElement
+name "index"
+type "positive"
+value "periph2Index"
+)
+]
+)
+viewicon (ZoomableIcon
+uid 13473,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "133250,96250,134750,97750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+portVis (PortSigDisplay
+sTC 0
+sT 1
+)
+archFileType "UNKNOWN"
+)
+*77 (Net
+uid 13077,0
+decl (Decl
+n "reset"
+t "std_ulogic"
+o 27
+suid 107,0
+)
+declText (MLText
+uid 13078,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,200,44000,1400"
+st "SIGNAL reset         : std_ulogic"
+)
+)
+*78 (Net
+uid 13079,0
+decl (Decl
+n "clock"
+t "std_ulogic"
+o 1
+suid 108,0
+)
+declText (MLText
+uid 13080,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,-2200,44000,-1000"
+st "SIGNAL clock         : std_ulogic"
+)
+)
+*79 (Net
+uid 13081,0
+decl (Decl
+n "upAddress"
+t "unsigned"
+b "(ahbAddressBitNb-1 DOWNTO 0)"
+o 28
+suid 109,0
+)
+declText (MLText
+uid 13082,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,163800,57500,165000"
+st "SIGNAL upAddress     : unsigned(ahbAddressBitNb-1 DOWNTO 0)"
+)
+)
+*80 (Net
+uid 13083,0
+decl (Decl
+n "upDataOut"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 30
+suid 110,0
+)
+declText (MLText
+uid 13084,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,165400,60500,166600"
+st "SIGNAL upDataOut     : std_ulogic_vector(ahbDataBitNb-1 DOWNTO 0)"
+)
+)
+*81 (Net
+uid 13085,0
+decl (Decl
+n "upDataIn"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 29
+suid 111,0
+)
+declText (MLText
+uid 13086,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,164600,60500,165800"
+st "SIGNAL upDataIn      : std_ulogic_vector(ahbDataBitNb-1 DOWNTO 0)"
+)
+)
+*82 (Net
+uid 13087,0
+decl (Decl
+n "upReadStrobe"
+t "std_uLogic"
+o 31
+suid 112,0
+)
+declText (MLText
+uid 13088,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,166200,44000,167400"
+st "SIGNAL upReadStrobe  : std_uLogic"
+)
+)
+*83 (Net
+uid 13089,0
+decl (Decl
+n "upWriteStrobe"
+t "std_uLogic"
+o 32
+suid 113,0
+)
+declText (MLText
+uid 13090,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,167000,44000,168200"
+st "SIGNAL upWriteStrobe : std_uLogic"
+)
+)
+*84 (Net
+uid 13091,0
+decl (Decl
+n "hAddr"
+t "unsigned"
+b "(ahbAddressBitNb-1 DOWNTO 0)"
+o 2
+suid 114,0
+)
+declText (MLText
+uid 13092,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,105400,57500,106600"
+st "SIGNAL hAddr         : unsigned(ahbAddressBitNb-1 DOWNTO 0)"
+)
+)
+*85 (Net
+uid 13093,0
+decl (Decl
+n "hWData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 25
+suid 115,0
+)
+declText (MLText
+uid 13094,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,149400,60500,150600"
+st "SIGNAL hWData        : std_ulogic_vector(ahbDataBitNb-1 DOWNTO 0)"
+)
+)
+*86 (Net
+uid 13095,0
+decl (Decl
+n "hRData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 7
+suid 116,0
+)
+declText (MLText
+uid 13096,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,109400,60500,110600"
+st "SIGNAL hRData        : std_ulogic_vector(ahbDataBitNb-1 DOWNTO 0)"
+)
+)
+*87 (Net
+uid 13097,0
+decl (Decl
+n "hTrans"
+t "std_ulogic_vector"
+b "(ahbTransBitNb-1 DOWNTO 0)"
+o 24
+suid 117,0
+)
+declText (MLText
+uid 13098,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,148600,61000,149800"
+st "SIGNAL hTrans        : std_ulogic_vector(ahbTransBitNb-1 DOWNTO 0)"
+)
+)
+*88 (Net
+uid 13099,0
+decl (Decl
+n "hSize"
+t "std_ulogic_vector"
+b "(ahbSizeBitNb-1 DOWNTO 0)"
+o 23
+suid 118,0
+)
+declText (MLText
+uid 13100,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,147800,60500,149000"
+st "SIGNAL hSize         : std_ulogic_vector(ahbSizeBitNb-1 DOWNTO 0)"
+)
+)
+*89 (Net
+uid 13101,0
+decl (Decl
+n "hBurst"
+t "std_ulogic_vector"
+b "(ahbBurstBitNb-1 DOWNTO 0)"
+o 3
+suid 119,0
+)
+declText (MLText
+uid 13102,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,106200,61000,107400"
+st "SIGNAL hBurst        : std_ulogic_vector(ahbBurstBitNb-1 DOWNTO 0)"
+)
+)
+*90 (Net
+uid 13103,0
+decl (Decl
+n "hProt"
+t "std_ulogic_vector"
+b "(ahbProtBitNb-1 DOWNTO 0)"
+o 6
+suid 120,0
+)
+declText (MLText
+uid 13104,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,108600,60500,109800"
+st "SIGNAL hProt         : std_ulogic_vector(ahbProtBitNb-1 DOWNTO 0)"
+)
+)
+*91 (Net
+uid 13105,0
+decl (Decl
+n "hWrite"
+t "std_uLogic"
+o 26
+suid 121,0
+)
+declText (MLText
+uid 13106,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,150200,44000,151400"
+st "SIGNAL hWrite        : std_uLogic"
+)
+)
+*92 (Net
+uid 13107,0
+decl (Decl
+n "hReady"
+t "std_uLogic"
+o 11
+suid 122,0
+)
+declText (MLText
+uid 13108,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,119000,44000,120200"
+st "SIGNAL hReady        : std_uLogic"
+)
+)
+*93 (Net
+uid 13109,0
+decl (Decl
+n "hMastLock"
+t "std_uLogic"
+o 5
+suid 123,0
+)
+declText (MLText
+uid 13110,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,107800,44000,109000"
+st "SIGNAL hMastLock     : std_uLogic"
+)
+)
+*94 (Net
+uid 13111,0
+decl (Decl
+n "hResp"
+t "std_uLogic"
+o 16
+suid 124,0
+)
+declText (MLText
+uid 13112,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,129400,44000,130600"
+st "SIGNAL hResp         : std_uLogic"
+)
+)
+*95 (Net
+uid 13113,0
+decl (Decl
+n "hClk"
+t "std_uLogic"
+o 4
+suid 125,0
+)
+declText (MLText
+uid 13114,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,107000,44000,108200"
+st "SIGNAL hClk          : std_uLogic"
+)
+)
+*96 (Net
+uid 13115,0
+decl (Decl
+n "hReset_n"
+t "std_uLogic"
+o 15
+suid 126,0
+)
+declText (MLText
+uid 13116,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,128600,44000,129800"
+st "SIGNAL hReset_n      : std_uLogic"
+)
+)
+*97 (Net
+uid 13117,0
+decl (Decl
+n "hSelV"
+t "std_ulogic_vector"
+b "(1 TO ahbSlaveNb)"
+o 22
+suid 127,0
+)
+declText (MLText
+uid 13118,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,147000,56500,148200"
+st "SIGNAL hSelV         : std_ulogic_vector(1 TO ahbSlaveNb)"
+)
+)
+*98 (Net
+uid 13119,0
+decl (Decl
+n "hRDataV"
+t "ahbDataVector"
+o 10
+suid 128,0
+)
+declText (MLText
+uid 13120,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,118200,45500,119400"
+st "SIGNAL hRDataV       : ahbDataVector"
+)
+)
+*99 (Net
+uid 13121,0
+decl (Decl
+n "hReadyV"
+t "std_logic_vector"
+b "(1 TO ahbSlaveNb)"
+o 14
+suid 129,0
+)
+declText (MLText
+uid 13122,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,127800,56000,129000"
+st "SIGNAL hReadyV       : std_logic_vector(1 TO ahbSlaveNb)"
+)
+)
+*100 (Net
+uid 13123,0
+decl (Decl
+n "hRespV"
+t "std_logic_vector"
+b "(1 TO ahbSlaveNb)"
+o 19
+suid 130,0
+)
+declText (MLText
+uid 13124,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "26000,138200,56000,139400"
+st "SIGNAL hRespV        : std_logic_vector(1 TO ahbSlaveNb)"
+)
+)
+*101 (Blk
+uid 13243,0
+shape (Rectangle
+uid 13244,0
+va (VaSet
+vasetType 1
+fg "39936,56832,65280"
+lineColor "0,0,32768"
+lineWidth 2
+)
+xt "37000,106000,185000,114000"
+)
+oxt "0,0,8000,10000"
+ttg (MlTextGroup
+uid 13245,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*102 (Text
+uid 13246,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "36900,113900,46500,115300"
+st "AhbLite_test"
+blo "36900,115100"
+tm "BdLibraryNameMgr"
+)
+*103 (Text
+uid 13247,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "36900,115300,47800,116700"
+st "ahbLite_tester"
+blo "36900,116500"
+tm "BlkNameMgr"
+)
+*104 (Text
+uid 13248,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "36900,116700,42800,118100"
+st "I_tester"
+blo "36900,117900"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 13249,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 13250,0
+text (MLText
+uid 13251,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "37000,119200,61000,120000"
+st "periph2BaseAddress = 16#10#    ( natural )  "
+)
+header ""
+)
+elements [
+(GiElement
+name "periph2BaseAddress"
+type "natural"
+value "16#10#"
+)
+]
+)
+viewicon (ZoomableIcon
+uid 13474,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "37250,112250,38750,113750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+)
+*105 (Net
+uid 13414,0
+decl (Decl
+n "hSelPeriph1"
+t "std_uLogic"
+o 20
+suid 142,0
+)
+declText (MLText
+uid 13415,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,18000,1200"
+st "SIGNAL hSelPeriph1   : std_uLogic"
+)
+)
+*106 (Net
+uid 13416,0
+decl (Decl
+n "hRDataPeriph1"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 8
+suid 143,0
+)
+declText (MLText
+uid 13417,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,34500,1200"
+st "SIGNAL hRDataPeriph1 : std_ulogic_vector(ahbDataBitNb-1 DOWNTO 0)"
+)
+)
+*107 (Net
+uid 13418,0
+decl (Decl
+n "hReadyPeriph1"
+t "std_uLogic"
+o 12
+suid 144,0
+)
+declText (MLText
+uid 13419,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,18000,1200"
+st "SIGNAL hReadyPeriph1 : std_uLogic"
+)
+)
+*108 (Net
+uid 13420,0
+decl (Decl
+n "hRespPeriph1"
+t "std_uLogic"
+o 17
+suid 145,0
+)
+declText (MLText
+uid 13421,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,18000,1200"
+st "SIGNAL hRespPeriph1  : std_uLogic"
+)
+)
+*109 (Net
+uid 13422,0
+decl (Decl
+n "hSelPeriph2"
+t "std_uLogic"
+o 21
+suid 146,0
+)
+declText (MLText
+uid 13423,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,18000,1200"
+st "SIGNAL hSelPeriph2   : std_uLogic"
+)
+)
+*110 (Net
+uid 13424,0
+decl (Decl
+n "hRDataPeriph2"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 9
+suid 147,0
+)
+declText (MLText
+uid 13425,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,34500,1200"
+st "SIGNAL hRDataPeriph2 : std_ulogic_vector(ahbDataBitNb-1 DOWNTO 0)"
+)
+)
+*111 (Net
+uid 13426,0
+decl (Decl
+n "hReadyPeriph2"
+t "std_uLogic"
+o 13
+suid 148,0
+)
+declText (MLText
+uid 13427,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,18000,1200"
+st "SIGNAL hReadyPeriph2 : std_uLogic"
+)
+)
+*112 (Net
+uid 13428,0
+decl (Decl
+n "hRespPeriph2"
+t "std_uLogic"
+o 18
+suid 149,0
+)
+declText (MLText
+uid 13429,0
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "0,0,18000,1200"
+st "SIGNAL hRespPeriph2  : std_uLogic"
+)
+)
+*113 (Wire
+uid 12719,0
+optionalChildren [
+*114 (BdJunction
+uid 12725,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12726,0
+va (VaSet
+vasetType 1
+)
+xt "92600,41600,93400,42400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12720,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "77750,42000,157000,106000"
+pts [
+"77750,42000"
+"157000,42000"
+"157000,106000"
+]
+)
+start &20
+end &101
+sat 32
+eat 1
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12723,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12724,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "80000,40600,84500,42000"
+st "hAddr"
+blo "80000,41800"
+tm "WireNameMgr"
+)
+)
+on &84
+)
+*115 (Wire
+uid 12735,0
+shape (OrthoPolyLine
+uid 12736,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "93000,42003,100250,62000"
+pts [
+"93000,42003"
+"93000,62000"
+"100250,62000"
+]
+)
+start &114
+end &48
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12737,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12738,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "94250,60600,98750,62000"
+st "hAddr"
+blo "94250,61800"
+tm "WireNameMgr"
+)
+)
+on &84
+)
+*116 (Wire
+uid 12751,0
+shape (OrthoPolyLine
+uid 12752,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "77750,44000,155000,106000"
+pts [
+"77750,44000"
+"155000,44000"
+"155000,106000"
+]
+)
+start &21
+end &101
+sat 32
+eat 1
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12755,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12756,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "80000,42600,85900,44000"
+st "hWData"
+blo "80000,43800"
+tm "WireNameMgr"
+)
+)
+on &85
+)
+*117 (Wire
+uid 12777,0
+shape (OrthoPolyLine
+uid 12778,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "77750,46000,153000,106000"
+pts [
+"77750,46000"
+"153000,46000"
+"153000,106000"
+]
+)
+start &27
+end &101
+sat 32
+eat 1
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12781,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12782,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "80000,44600,85100,46000"
+st "hTrans"
+blo "80000,45800"
+tm "WireNameMgr"
+)
+)
+on &87
+)
+*118 (Wire
+uid 12803,0
+shape (OrthoPolyLine
+uid 12804,0
+va (VaSet
+vasetType 3
+)
+xt "77750,48000,151000,106000"
+pts [
+"77750,48000"
+"151000,48000"
+"151000,106000"
+]
+)
+start &23
+end &101
+sat 32
+eat 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12807,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12808,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "80000,46600,85000,48000"
+st "hWrite"
+blo "80000,47800"
+tm "WireNameMgr"
+)
+)
+on &91
+)
+*119 (Wire
+uid 12829,0
+optionalChildren [
+*120 (BdJunction
+uid 12833,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12834,0
+va (VaSet
+vasetType 1
+)
+xt "122600,61600,123400,62400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12830,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "117750,54000,132250,62000"
+pts [
+"117750,62000"
+"123000,62000"
+"123000,54000"
+"132250,54000"
+]
+)
+start &49
+end &54
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12831,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12832,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "118000,60600,122300,62000"
+st "hSelV"
+blo "118000,61800"
+tm "WireNameMgr"
+)
+)
+on &97
+)
+*121 (Wire
+uid 12835,0
+optionalChildren [
+*122 (BdJunction
+uid 12839,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12840,0
+va (VaSet
+vasetType 1
+)
+xt "122600,77600,123400,78400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12836,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "117750,62000,123000,78000"
+pts [
+"123000,62000"
+"123000,78000"
+"117750,78000"
+]
+)
+start &120
+end &37
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12837,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12838,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "118000,76600,122300,78000"
+st "hSelV"
+blo "118000,77800"
+tm "WireNameMgr"
+)
+)
+on &97
+)
+*123 (Wire
+uid 12841,0
+optionalChildren [
+*124 (BdJunction
+uid 12847,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12848,0
+va (VaSet
+vasetType 1
+)
+xt "122600,87600,123400,88400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12842,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "123000,78000,123000,102000"
+pts [
+"123000,78000"
+"123000,102000"
+]
+)
+start &122
+sat 32
+eat 16
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12845,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12846,0
+ro 270
+va (VaSet
+font "Verdana,12,0"
+)
+xt "121600,97000,123000,101300"
+st "hSelV"
+blo "122800,101300"
+tm "WireNameMgr"
+)
+)
+on &97
+)
+*125 (Wire
+uid 12853,0
+shape (OrthoPolyLine
+uid 12854,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "123000,88000,132250,88000"
+pts [
+"132250,88000"
+"123000,88000"
+]
+)
+start &66
+end &124
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12855,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12856,0
+va (VaSet
+isHidden 1
+font "Verdana,12,0"
+)
+xt "127250,86600,131550,88000"
+st "hSelV"
+blo "127250,87800"
+tm "WireNameMgr"
+)
+)
+on &97
+)
+*126 (Wire
+uid 12857,0
+optionalChildren [
+*127 (BdJunction
+uid 12861,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12862,0
+va (VaSet
+vasetType 1
+)
+xt "124600,81600,125400,82400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12858,0
+va (VaSet
+vasetType 3
+)
+xt "117750,56000,132250,82000"
+pts [
+"117750,82000"
+"125000,82000"
+"125000,56000"
+"132250,56000"
+]
+)
+start &38
+end &55
+sat 32
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12859,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12860,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "119750,80600,125950,82000"
+st "hRDataV"
+blo "119750,81800"
+tm "WireNameMgr"
+)
+)
+on &98
+)
+*128 (Wire
+uid 12863,0
+optionalChildren [
+*129 (BdJunction
+uid 12869,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12870,0
+va (VaSet
+vasetType 1
+)
+xt "124600,89600,125400,90400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12864,0
+va (VaSet
+vasetType 3
+)
+xt "125000,82000,125000,102000"
+pts [
+"125000,82000"
+"125000,102000"
+]
+)
+start &127
+sat 32
+eat 16
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12867,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12868,0
+ro 270
+va (VaSet
+font "Verdana,12,0"
+)
+xt "123600,95000,125000,101200"
+st "hRDataV"
+blo "124800,101200"
+tm "WireNameMgr"
+)
+)
+on &98
+)
+*130 (Wire
+uid 12875,0
+shape (OrthoPolyLine
+uid 12876,0
+va (VaSet
+vasetType 3
+)
+xt "125000,90000,132250,90000"
+pts [
+"132250,90000"
+"125000,90000"
+]
+)
+start &67
+end &129
+sat 32
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12877,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12878,0
+va (VaSet
+isHidden 1
+font "Verdana,12,0"
+)
+xt "125250,88600,131450,90000"
+st "hRDataV"
+blo "125250,89800"
+tm "WireNameMgr"
+)
+)
+on &98
+)
+*131 (Wire
+uid 12879,0
+optionalChildren [
+*132 (BdJunction
+uid 12883,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12884,0
+va (VaSet
+vasetType 1
+)
+xt "126600,83600,127400,84400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12880,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "117750,58000,132250,84000"
+pts [
+"117750,84000"
+"127000,84000"
+"127000,58000"
+"132250,58000"
+]
+)
+start &42
+end &59
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12881,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12882,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "119750,82600,126050,84000"
+st "hReadyV"
+blo "119750,83800"
+tm "WireNameMgr"
+)
+)
+on &99
+)
+*133 (Wire
+uid 12885,0
+optionalChildren [
+*134 (BdJunction
+uid 12891,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12892,0
+va (VaSet
+vasetType 1
+)
+xt "126600,91600,127400,92400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12886,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "127000,84000,127000,102000"
+pts [
+"127000,84000"
+"127000,102000"
+]
+)
+start &132
+sat 32
+eat 16
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12889,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12890,0
+ro 270
+va (VaSet
+font "Verdana,12,0"
+)
+xt "125600,95000,127000,101300"
+st "hReadyV"
+blo "126800,101300"
+tm "WireNameMgr"
+)
+)
+on &99
+)
+*135 (Wire
+uid 12897,0
+shape (OrthoPolyLine
+uid 12898,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "127000,92000,132250,92000"
+pts [
+"132250,92000"
+"127000,92000"
+]
+)
+start &71
+end &134
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12899,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12900,0
+va (VaSet
+isHidden 1
+font "Verdana,12,0"
+)
+xt "125250,90600,131550,92000"
+st "hReadyV"
+blo "125250,91800"
+tm "WireNameMgr"
+)
+)
+on &99
+)
+*136 (Wire
+uid 12901,0
+optionalChildren [
+*137 (BdJunction
+uid 12905,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12906,0
+va (VaSet
+vasetType 1
+)
+xt "128600,85600,129400,86400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12902,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "117750,60000,132250,86000"
+pts [
+"117750,86000"
+"129000,86000"
+"129000,60000"
+"132250,60000"
+]
+)
+start &43
+end &60
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12903,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12904,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "119750,84600,125250,86000"
+st "hRespV"
+blo "119750,85800"
+tm "WireNameMgr"
+)
+)
+on &100
+)
+*138 (Wire
+uid 12907,0
+optionalChildren [
+*139 (BdJunction
+uid 12913,0
+ps "OnConnectorStrategy"
+shape (Circle
+uid 12914,0
+va (VaSet
+vasetType 1
+)
+xt "128600,93600,129400,94400"
+radius 400
+)
+)
+]
+shape (OrthoPolyLine
+uid 12908,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "129000,86000,129000,102000"
+pts [
+"129000,86000"
+"129000,102000"
+]
+)
+start &137
+sat 32
+eat 16
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12911,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12912,0
+ro 270
+va (VaSet
+font "Verdana,12,0"
+)
+xt "127600,95000,129000,100500"
+st "hRespV"
+blo "128800,100500"
+tm "WireNameMgr"
+)
+)
+on &100
+)
+*140 (Wire
+uid 12919,0
+shape (OrthoPolyLine
+uid 12920,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "129000,94000,132250,94000"
+pts [
+"132250,94000"
+"129000,94000"
+]
+)
+start &72
+end &139
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12921,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12922,0
+va (VaSet
+isHidden 1
+font "Verdana,12,0"
+)
+xt "125250,92600,130750,94000"
+st "hRespV"
+blo "125250,93800"
+tm "WireNameMgr"
+)
+)
+on &100
+)
+*141 (Wire
+uid 12923,0
+shape (OrthoPolyLine
+uid 12924,0
+va (VaSet
+vasetType 3
+)
+xt "59000,66000,60250,106000"
+pts [
+"59000,106000"
+"59000,66000"
+"60250,66000"
+]
+)
+start &101
+end &14
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12927,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12928,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "56000,64600,60100,66000"
+st "reset"
+blo "56000,65800"
+tm "WireNameMgr"
+)
+)
+on &77
+)
+*142 (Wire
+uid 12929,0
+shape (OrthoPolyLine
+uid 12930,0
+va (VaSet
+vasetType 3
+)
+xt "57000,64000,60250,106000"
+pts [
+"57000,106000"
+"57000,64000"
+"60250,64000"
+]
+)
+start &101
+end &13
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12933,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12934,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "56000,62600,59800,64000"
+st "clock"
+blo "56000,63800"
+tm "WireNameMgr"
+)
+)
+on &78
+)
+*143 (Wire
+uid 12935,0
+shape (OrthoPolyLine
+uid 12936,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "45000,42000,60250,106000"
+pts [
+"45000,106000"
+"45000,42000"
+"60250,42000"
+]
+)
+start &101
+end &17
+sat 2
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12939,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12940,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "51000,40600,58500,42000"
+st "upAddress"
+blo "51000,41800"
+tm "WireNameMgr"
+)
+)
+on &79
+)
+*144 (Wire
+uid 12941,0
+shape (OrthoPolyLine
+uid 12942,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "47000,44000,60250,106000"
+pts [
+"47000,106000"
+"47000,44000"
+"60250,44000"
+]
+)
+start &101
+end &18
+sat 2
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12945,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12946,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "51000,42600,58700,44000"
+st "upDataOut"
+blo "51000,43800"
+tm "WireNameMgr"
+)
+)
+on &80
+)
+*145 (Wire
+uid 12947,0
+shape (OrthoPolyLine
+uid 12948,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "49000,46000,60250,106000"
+pts [
+"49000,106000"
+"49000,46000"
+"60250,46000"
+]
+)
+start &101
+end &19
+sat 1
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12951,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12952,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "51000,44600,57700,46000"
+st "upDataIn"
+blo "51000,45800"
+tm "WireNameMgr"
+)
+)
+on &81
+)
+*146 (Wire
+uid 12953,0
+shape (OrthoPolyLine
+uid 12954,0
+va (VaSet
+vasetType 3
+)
+xt "51000,48000,60250,106000"
+pts [
+"51000,106000"
+"51000,48000"
+"60250,48000"
+]
+)
+start &101
+end &15
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12957,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12958,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "51000,46600,61600,48000"
+st "upReadStrobe"
+blo "51000,47800"
+tm "WireNameMgr"
+)
+)
+on &82
+)
+*147 (Wire
+uid 12959,0
+shape (OrthoPolyLine
+uid 12960,0
+va (VaSet
+vasetType 3
+)
+xt "53000,50000,60250,106000"
+pts [
+"53000,106000"
+"53000,50000"
+"60250,50000"
+]
+)
+start &101
+end &16
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12963,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12964,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "51000,48600,61800,50000"
+st "upWriteStrobe"
+blo "51000,49800"
+tm "WireNameMgr"
+)
+)
+on &83
+)
+*148 (Wire
+uid 12965,0
+shape (OrthoPolyLine
+uid 12966,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "77750,58000,100250,82000"
+pts [
+"77750,58000"
+"91000,58000"
+"91000,82000"
+"100250,82000"
+]
+)
+start &22
+end &41
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12967,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12968,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "79750,56600,85150,58000"
+st "hRData"
+blo "79750,57800"
+tm "WireNameMgr"
+)
+)
+on &86
+)
+*149 (Wire
+uid 12969,0
+shape (OrthoPolyLine
+uid 12970,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "77750,50000,89000,50000"
+pts [
+"77750,50000"
+"89000,50000"
+]
+)
+start &24
+sat 32
+eat 16
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12973,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12974,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "80000,48600,84200,50000"
+st "hSize"
+blo "80000,49800"
+tm "WireNameMgr"
+)
+)
+on &88
+)
+*150 (Wire
+uid 12975,0
+shape (OrthoPolyLine
+uid 12976,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "77750,52000,89000,52000"
+pts [
+"77750,52000"
+"89000,52000"
+]
+)
+start &25
+sat 32
+eat 16
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12979,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12980,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "79750,50600,84650,52000"
+st "hBurst"
+blo "79750,51800"
+tm "WireNameMgr"
+)
+)
+on &89
+)
+*151 (Wire
+uid 12981,0
+shape (OrthoPolyLine
+uid 12982,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "77750,54000,89000,54000"
+pts [
+"77750,54000"
+"89000,54000"
+]
+)
+start &26
+sat 32
+eat 16
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12985,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12986,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "79750,52600,83950,54000"
+st "hProt"
+blo "79750,53800"
+tm "WireNameMgr"
+)
+)
+on &90
+)
+*152 (Wire
+uid 12987,0
+shape (OrthoPolyLine
+uid 12988,0
+va (VaSet
+vasetType 3
+)
+xt "77750,60000,100250,84000"
+pts [
+"77750,60000"
+"89000,60000"
+"89000,84000"
+"100250,84000"
+]
+)
+start &29
+end &39
+sat 32
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12989,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12990,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "79750,58600,85250,60000"
+st "hReady"
+blo "79750,59800"
+tm "WireNameMgr"
+)
+)
+on &92
+)
+*153 (Wire
+uid 12991,0
+shape (OrthoPolyLine
+uid 12992,0
+va (VaSet
+vasetType 3
+)
+xt "77750,56000,89000,56000"
+pts [
+"77750,56000"
+"89000,56000"
+]
+)
+start &28
+sat 32
+eat 16
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12995,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 12996,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "79750,54600,87150,56000"
+st "hMastLock"
+blo "79750,55800"
+tm "WireNameMgr"
+)
+)
+on &93
+)
+*154 (Wire
+uid 12997,0
+shape (OrthoPolyLine
+uid 12998,0
+va (VaSet
+vasetType 3
+)
+xt "77750,62000,100250,86000"
+pts [
+"77750,62000"
+"87000,62000"
+"87000,86000"
+"100250,86000"
+]
+)
+start &30
+end &40
+sat 32
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 12999,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13000,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "79750,60600,84450,62000"
+st "hResp"
+blo "79750,61800"
+tm "WireNameMgr"
+)
+)
+on &94
+)
+*155 (Wire
+uid 13001,0
+shape (OrthoPolyLine
+uid 13002,0
+va (VaSet
+vasetType 3
+)
+xt "77750,64000,83000,106000"
+pts [
+"77750,64000"
+"83000,64000"
+"83000,106000"
+]
+)
+start &31
+end &101
+sat 32
+eat 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13005,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13006,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "80000,62600,83500,64000"
+st "hClk"
+blo "80000,63800"
+tm "WireNameMgr"
+)
+)
+on &95
+)
+*156 (Wire
+uid 13007,0
+shape (OrthoPolyLine
+uid 13008,0
+va (VaSet
+vasetType 3
+)
+xt "77750,66000,81000,106000"
+pts [
+"77750,66000"
+"81000,66000"
+"81000,106000"
+]
+)
+start &32
+end &101
+sat 32
+eat 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13011,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13012,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "80000,64600,86800,66000"
+st "hReset_n"
+blo "80000,65800"
+tm "WireNameMgr"
+)
+)
+on &96
+)
+*157 (Wire
+uid 13029,0
+shape (OrthoPolyLine
+uid 13030,0
+va (VaSet
+vasetType 3
+)
+xt "149750,54000,177000,106000"
+pts [
+"149750,54000"
+"177000,54000"
+"177000,106000"
+]
+)
+start &61
+end &101
+sat 32
+eat 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13033,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13034,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,52600,168100,54000"
+st "hSelPeriph1"
+blo "159000,53800"
+tm "WireNameMgr"
+)
+)
+on &105
+)
+*158 (Wire
+uid 13035,0
+shape (OrthoPolyLine
+uid 13036,0
+va (VaSet
+vasetType 3
+)
+xt "149750,60000,171000,106000"
+pts [
+"171000,106000"
+"171000,60000"
+"149750,60000"
+]
+)
+start &101
+end &57
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13039,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13040,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,58600,169300,60000"
+st "hRespPeriph1"
+blo "159000,59800"
+tm "WireNameMgr"
+)
+)
+on &108
+)
+*159 (Wire
+uid 13041,0
+shape (OrthoPolyLine
+uid 13042,0
+va (VaSet
+vasetType 3
+)
+xt "149750,58000,173000,106000"
+pts [
+"173000,106000"
+"173000,58000"
+"149750,58000"
+]
+)
+start &101
+end &56
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13045,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13046,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,56600,170100,58000"
+st "hReadyPeriph1"
+blo "159000,57800"
+tm "WireNameMgr"
+)
+)
+on &107
+)
+*160 (Wire
+uid 13047,0
+shape (OrthoPolyLine
+uid 13048,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "149750,56000,175000,106000"
+pts [
+"175000,106000"
+"175000,56000"
+"149750,56000"
+]
+)
+start &101
+end &58
+sat 2
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13051,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13052,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,54600,170000,56000"
+st "hRDataPeriph1"
+blo "159000,55800"
+tm "WireNameMgr"
+)
+)
+on &106
+)
+*161 (Wire
+uid 13053,0
+shape (OrthoPolyLine
+uid 13054,0
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+xt "149750,90000,165000,106000"
+pts [
+"165000,106000"
+"165000,90000"
+"149750,90000"
+]
+)
+start &101
+end &70
+sat 2
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13057,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13058,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,88600,170000,90000"
+st "hRDataPeriph2"
+blo "159000,89800"
+tm "WireNameMgr"
+)
+)
+on &110
+)
+*162 (Wire
+uid 13059,0
+shape (OrthoPolyLine
+uid 13060,0
+va (VaSet
+vasetType 3
+)
+xt "149750,88000,167000,106000"
+pts [
+"149750,88000"
+"167000,88000"
+"167000,106000"
+]
+)
+start &73
+end &101
+sat 32
+eat 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13063,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13064,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,86600,168100,88000"
+st "hSelPeriph2"
+blo "159000,87800"
+tm "WireNameMgr"
+)
+)
+on &109
+)
+*163 (Wire
+uid 13065,0
+shape (OrthoPolyLine
+uid 13066,0
+va (VaSet
+vasetType 3
+)
+xt "149750,94000,161000,106000"
+pts [
+"161000,106000"
+"161000,94000"
+"149750,94000"
+]
+)
+start &101
+end &69
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13069,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13070,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,92600,169300,94000"
+st "hRespPeriph2"
+blo "159000,93800"
+tm "WireNameMgr"
+)
+)
+on &112
+)
+*164 (Wire
+uid 13071,0
+shape (OrthoPolyLine
+uid 13072,0
+va (VaSet
+vasetType 3
+)
+xt "149750,92000,163000,106000"
+pts [
+"163000,106000"
+"163000,92000"
+"149750,92000"
+]
+)
+start &101
+end &68
+sat 2
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+uid 13075,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 13076,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "159000,90600,170100,92000"
+st "hReadyPeriph2"
+blo "159000,91800"
+tm "WireNameMgr"
+)
+)
+on &111
+)
+]
+bg "65535,65535,65535"
+grid (Grid
+origin "0,0"
+isVisible 1
+isActive 1
+xSpacing 1000
+xySpacing 1000
+xShown 1
+yShown 1
+color "32768,32768,32768"
+)
+packageList *165 (PackageList
+uid 187,0
+stg "VerticalLayoutStrategy"
+textVec [
+*166 (Text
+uid 1297,0
+va (VaSet
+font "Verdana,8,1"
+)
+xt "29000,19600,35900,20600"
+st "Package List"
+blo "29000,20400"
+)
+*167 (MLText
+uid 1298,0
+va (VaSet
+)
+xt "29000,20600,46500,26600"
+st "LIBRARY ieee;
+  USE ieee.std_logic_1164.all;
+  USE ieee.numeric_std.all;
+LIBRARY AhbLite;
+  USE AhbLite.ahbLite.all;"
+tm "PackageList"
+)
+]
+)
+compDirBlock (MlTextGroup
+uid 190,0
+stg "VerticalLayoutStrategy"
+textVec [
+*168 (Text
+uid 191,0
+va (VaSet
+isHidden 1
+font "arial,10,1"
+)
+xt "20000,0,31000,1200"
+st "Compiler Directives"
+blo "20000,1000"
+)
+*169 (Text
+uid 192,0
+va (VaSet
+isHidden 1
+font "arial,10,1"
+)
+xt "20000,1400,33000,2600"
+st "Pre-module directives:"
+blo "20000,2400"
+)
+*170 (MLText
+uid 193,0
+va (VaSet
+isHidden 1
+font "arial,10,0"
+)
+xt "20000,2800,30400,5400"
+st "`resetall
+`timescale 1ns/10ps"
+tm "BdCompilerDirectivesTextMgr"
+)
+*171 (Text
+uid 194,0
+va (VaSet
+isHidden 1
+font "arial,10,1"
+)
+xt "20000,5600,33500,6800"
+st "Post-module directives:"
+blo "20000,6600"
+)
+*172 (MLText
+uid 195,0
+va (VaSet
+isHidden 1
+font "arial,10,0"
+)
+xt "20000,7000,20000,7000"
+tm "BdCompilerDirectivesTextMgr"
+)
+*173 (Text
+uid 196,0
+va (VaSet
+isHidden 1
+font "arial,10,1"
+)
+xt "20000,7200,33200,8400"
+st "End-module directives:"
+blo "20000,8200"
+)
+*174 (MLText
+uid 197,0
+va (VaSet
+isHidden 1
+font "arial,10,0"
+)
+xt "20000,1200,20000,1200"
+tm "BdCompilerDirectivesTextMgr"
+)
+]
+associable 1
+)
+windowSize "104,43,1430,898"
+viewArea "26656,17257,204334,131696"
+cachedDiagramExtent "0,-2200,192000,168200"
+pageSetupInfo (PageSetupInfo
+ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
+fileName "\\\\EIV\\a309_hplj4050.electro.eiv"
+toPrinter 1
+xMargin 48
+yMargin 48
+paperWidth 761
+paperHeight 1077
+windowsPaperWidth 761
+windowsPaperHeight 1077
+paperType "A4"
+windowsPaperName "A4"
+windowsPaperType 9
+scale 45
+titlesVisible 0
+exportedDirectories [
+"$HDS_PROJECT_DIR/HTMLExport"
+]
+boundaryWidth 0
+)
+hasePageBreakOrigin 1
+pageBreakOrigin "29000,19000"
+lastUid 13613,0
+defaultCommentText (CommentText
+shape (Rectangle
+layer 0
+va (VaSet
+vasetType 1
+fg "65280,65280,46080"
+lineColor "0,0,32768"
+)
+xt "0,0,15000,5000"
+)
+text (MLText
+va (VaSet
+fg "0,0,32768"
+)
+xt "200,200,3200,1400"
+st "
+Text
+"
+tm "CommentText"
+wrapOption 3
+visibleHeight 4600
+visibleWidth 14600
+)
+)
+defaultRequirementText (RequirementText
+shape (ZoomableIcon
+layer 0
+va (VaSet
+vasetType 1
+fg "59904,39936,65280"
+lineColor "0,0,32768"
+)
+xt "0,0,1500,1750"
+iconName "reqTracerRequirement.bmp"
+iconMaskName "reqTracerRequirement.msk"
+)
+autoResize 1
+text (MLText
+va (VaSet
+fg "0,0,32768"
+font "arial,8,0"
+)
+xt "500,2150,1400,3150"
+st "
+Text
+"
+tm "RequirementText"
+wrapOption 3
+visibleHeight 1350
+visibleWidth 1100
+)
+)
+defaultPanel (Panel
+shape (RectFrame
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineColor "32768,0,0"
+lineWidth 3
+)
+xt "0,0,20000,20000"
+)
+title (TextAssociate
+ps "TopLeftStrategy"
+text (Text
+va (VaSet
+font "Verdana,8,1"
+)
+xt "300,1000,4000,2000"
+st "Panel0"
+blo "300,1800"
+tm "PanelText"
+)
+)
+)
+defaultBlk (Blk
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "39936,56832,65280"
+lineColor "0,0,32768"
+lineWidth 2
+)
+xt "0,0,8000,10000"
+)
+ttg (MlTextGroup
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*175 (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "1500,2550,8000,3950"
+st "<library>"
+blo "1500,3750"
+tm "BdLibraryNameMgr"
+)
+*176 (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "1500,3950,7300,5350"
+st "<block>"
+blo "1500,5150"
+tm "BlkNameMgr"
+)
+*177 (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "1500,5350,4800,6750"
+st "U_0"
+blo "1500,6550"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+text (MLText
+va (VaSet
+isHidden 1
+font "Courier New,8,0"
+)
+xt "1500,12550,1500,12550"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "250,8250,1750,9750"
+iconName "UnknownFile.png"
+iconMaskName "UnknownFile.msk"
+)
+viewiconposition 0
+)
+defaultMWComponent (MWC
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "-600,0,8600,10000"
+)
+ttg (MlTextGroup
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*178 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-100,3000,4300,4200"
+st "Library"
+blo "-100,4000"
+)
+*179 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-100,4200,9800,5400"
+st "MWComponent"
+blo "-100,5200"
+)
+*180 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-100,5400,2700,6600"
+st "U_0"
+blo "-100,6400"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+text (MLText
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+xt "-7100,1000,-7100,1000"
+)
+header ""
+)
+elements [
+]
+)
+prms (Property
+pclass "params"
+pname "params"
+ptn "String"
+)
+visOptions (mwParamsVisibilityOptions
+)
+)
+defaultSaComponent (SaComponent
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "-850,0,8850,10000"
+)
+ttg (MlTextGroup
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*181 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-350,2550,4050,3750"
+st "Library"
+blo "-350,3550"
+tm "BdLibraryNameMgr"
+)
+*182 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-350,3750,8950,4950"
+st "SaComponent"
+blo "-350,4750"
+tm "CptNameMgr"
+)
+*183 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-350,4950,2450,6150"
+st "U_0"
+blo "-350,5950"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+text (MLText
+va (VaSet
+isHidden 1
+font "Courier New,8,0"
+)
+xt "-7350,550,-7350,550"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "-600,8250,900,9750"
+iconName "UnknownFile.png"
+iconMaskName "UnknownFile.msk"
+)
+viewiconposition 0
+archFileType "UNKNOWN"
+)
+defaultVhdlComponent (VhdlComponent
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "-1350,0,9350,10000"
+)
+ttg (MlTextGroup
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*184 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-850,2550,3550,3750"
+st "Library"
+blo "-850,3550"
+)
+*185 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-850,3750,9450,4950"
+st "VhdlComponent"
+blo "-850,4750"
+)
+*186 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-850,4950,1950,6150"
+st "U_0"
+blo "-850,5950"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+text (MLText
+va (VaSet
+isHidden 1
+font "Courier New,8,0"
+)
+xt "-7850,550,-7850,550"
+)
+header ""
+)
+elements [
+]
+)
+entityPath ""
+archName ""
+archPath ""
+)
+defaultVerilogComponent (VerilogComponent
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "-2100,0,10100,10000"
+)
+ttg (MlTextGroup
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*187 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-1600,2550,2800,3750"
+st "Library"
+blo "-1600,3550"
+)
+*188 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-1600,3750,10100,4950"
+st "VerilogComponent"
+blo "-1600,4750"
+)
+*189 (Text
+va (VaSet
+font "Verdana,10,0"
+)
+xt "-1600,4950,1200,6150"
+st "U_0"
+blo "-1600,5950"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+text (MLText
+va (VaSet
+isHidden 1
+font "Courier New,8,0"
+)
+xt "-8600,550,-8600,550"
+)
+header ""
+)
+elements [
+]
+)
+entityPath ""
+)
+defaultHdlText (HdlText
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "65535,65535,37120"
+lineColor "0,0,32768"
+lineWidth 2
+)
+xt "0,0,8000,10000"
+)
+ttg (MlTextGroup
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*190 (Text
+va (VaSet
+font "Verdana,8,1"
+)
+xt "2950,3400,5250,4400"
+st "eb1"
+blo "2950,4200"
+tm "HdlTextNameMgr"
+)
+*191 (Text
+va (VaSet
+font "Verdana,8,1"
+)
+xt "2950,4400,4150,5400"
+st "1"
+blo "2950,5200"
+tm "HdlTextNumberMgr"
+)
+]
+)
+viewicon (ZoomableIcon
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "250,8250,1750,9750"
+iconName "UnknownFile.png"
+iconMaskName "UnknownFile.msk"
+)
+viewiconposition 0
+)
+defaultEmbeddedText (EmbeddedText
+commentText (CommentText
+ps "CenterOffsetStrategy"
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineColor "0,0,32768"
+lineWidth 2
+)
+xt "0,0,18000,5000"
+)
+text (MLText
+va (VaSet
+)
+xt "200,200,3200,1400"
+st "
+Text
+"
+tm "HdlTextMgr"
+wrapOption 3
+visibleHeight 4600
+visibleWidth 17600
+)
+)
+)
+defaultGlobalConnector (GlobalConnector
+shape (Circle
+va (VaSet
+vasetType 1
+fg "65535,65535,0"
+)
+xt "-1000,-1000,1000,1000"
+radius 1000
+)
+name (Text
+va (VaSet
+)
+xt "-750,-600,750,600"
+st "G"
+blo "-750,400"
+)
+)
+defaultRipper (Ripper
+ps "OnConnectorStrategy"
+shape (Line2D
+pts [
+"0,0"
+"1000,1000"
+]
+va (VaSet
+vasetType 1
+)
+xt "0,0,1000,1000"
+)
+)
+defaultBdJunction (BdJunction
+ps "OnConnectorStrategy"
+shape (Circle
+va (VaSet
+vasetType 1
+)
+xt "-400,-400,400,400"
+radius 400
+)
+)
+defaultPortIoIn (PortIoIn
+shape (CompositeShape
+va (VaSet
+vasetType 1
+fg "0,0,32768"
+)
+optionalChildren [
+(Pentagon
+sl 0
+ro 270
+xt "-2000,-375,-500,375"
+)
+(Line
+sl 0
+ro 270
+xt "-500,0,0,0"
+pts [
+"-500,0"
+"0,0"
+]
+)
+]
+)
+stc 0
+sf 1
+tg (WTG
+ps "PortIoTextPlaceStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "-2875,-375,-2875,-375"
+ju 2
+blo "-2875,-375"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "-2875,-375,-2875,-375"
+ju 2
+blo "-2875,-375"
+tm "SignalTypeMgr"
+)
+)
+)
+defaultPortIoOut (PortIoOut
+shape (CompositeShape
+va (VaSet
+vasetType 1
+fg "0,0,32768"
+)
+optionalChildren [
+(Pentagon
+sl 0
+ro 270
+xt "500,-375,2000,375"
+)
+(Line
+sl 0
+ro 270
+xt "0,0,500,0"
+pts [
+"0,0"
+"500,0"
+]
+)
+]
+)
+stc 0
+sf 1
+tg (WTG
+ps "PortIoTextPlaceStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "2875,-375,2875,-375"
+blo "2875,-375"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "2875,-375,2875,-375"
+blo "2875,-375"
+tm "SignalTypeMgr"
+)
+)
+)
+defaultPortIoInOut (PortIoInOut
+shape (CompositeShape
+va (VaSet
+vasetType 1
+fg "0,0,32768"
+)
+optionalChildren [
+(Hexagon
+sl 0
+xt "500,-375,2000,375"
+)
+(Line
+sl 0
+xt "0,0,500,0"
+pts [
+"0,0"
+"500,0"
+]
+)
+]
+)
+stc 0
+sf 1
+tg (WTG
+ps "PortIoTextPlaceStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "3000,500,3000,500"
+blo "3000,500"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "3000,500,3000,500"
+blo "3000,500"
+tm "SignalTypeMgr"
+)
+)
+)
+defaultPortIoBuffer (PortIoBuffer
+shape (CompositeShape
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineColor "0,0,32768"
+)
+optionalChildren [
+(Hexagon
+sl 0
+xt "500,-375,2000,375"
+)
+(Line
+sl 0
+xt "0,0,500,0"
+pts [
+"0,0"
+"500,0"
+]
+)
+]
+)
+stc 0
+sf 1
+tg (WTG
+ps "PortIoTextPlaceStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "3000,500,3000,500"
+blo "3000,500"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "3000,500,3000,500"
+blo "3000,500"
+tm "SignalTypeMgr"
+)
+)
+)
+defaultSignal (Wire
+shape (OrthoPolyLine
+va (VaSet
+vasetType 3
+)
+pts [
+"0,0"
+"0,0"
+]
+)
+ss 0
+es 0
+sat 32
+eat 32
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "0,0,3400,1400"
+st "sig0"
+blo "0,1200"
+tm "WireNameMgr"
+)
+)
+)
+defaultBus (Wire
+shape (OrthoPolyLine
+va (VaSet
+vasetType 3
+lineWidth 2
+)
+pts [
+"0,0"
+"0,0"
+]
+)
+ss 0
+es 0
+sat 32
+eat 32
+sty 1
+stc 0
+st 0
+sf 1
+si 0
+tg (WTG
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+va (VaSet
+font "Verdana,12,0"
+)
+xt "0,0,4700,1400"
+st "dbus0"
+blo "0,1200"
+tm "WireNameMgr"
+)
+)
+)
+defaultBundle (Bundle
+shape (OrthoPolyLine
+va (VaSet
+vasetType 3
+lineColor "32768,0,0"
+lineWidth 2
+)
+pts [
+"0,0"
+"0,0"
+]
+)
+ss 0
+es 0
+sat 32
+eat 32
+textGroup (BiTextGroup
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+first (Text
+va (VaSet
+)
+xt "0,400,3700,1400"
+st "bundle0"
+blo "0,1200"
+tm "BundleNameMgr"
+)
+second (MLText
+va (VaSet
+)
+xt "0,1400,1500,2600"
+st "()"
+tm "BundleContentsMgr"
+)
+)
+bundleNet &0
+)
+defaultPortMapFrame (PortMapFrame
+ps "PortMapFrameStrategy"
+shape (RectFrame
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineColor "0,0,32768"
+lineWidth 2
+)
+xt "0,0,10000,12000"
+)
+portMapText (BiTextGroup
+ps "BottomRightOffsetStrategy"
+stg "VerticalLayoutStrategy"
+first (MLText
+va (VaSet
+)
+xt "0,0,5000,1200"
+st "Auto list"
+)
+second (MLText
+va (VaSet
+)
+xt "0,1200,9600,2400"
+st "User defined list"
+tm "PortMapTextMgr"
+)
+)
+)
+defaultGenFrame (Frame
+shape (RectFrame
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineColor "26368,26368,26368"
+lineStyle 2
+lineWidth 3
+)
+xt "0,0,20000,20000"
+)
+title (TextAssociate
+ps "TopLeftStrategy"
+text (MLText
+va (VaSet
+)
+xt "0,-1400,18500,-200"
+st "g0: FOR i IN 0 TO n GENERATE"
+tm "FrameTitleTextMgr"
+)
+)
+seqNum (FrameSequenceNumber
+ps "TopLeftStrategy"
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+)
+xt "50,50,1050,1750"
+)
+num (Text
+va (VaSet
+)
+xt "200,300,600,1300"
+st "1"
+blo "200,1100"
+tm "FrameSeqNumMgr"
+)
+)
+decls (MlTextGroup
+ps "BottomRightOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*192 (Text
+va (VaSet
+font "Verdana,8,1"
+)
+xt "11800,20000,21800,21000"
+st "Frame Declarations"
+blo "11800,20800"
+)
+*193 (MLText
+va (VaSet
+)
+xt "11800,21000,11800,21000"
+tm "BdFrameDeclTextMgr"
+)
+]
+)
+)
+defaultBlockFrame (Frame
+shape (RectFrame
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+lineColor "26368,26368,26368"
+lineStyle 1
+lineWidth 3
+)
+xt "0,0,20000,20000"
+)
+title (TextAssociate
+ps "TopLeftStrategy"
+text (MLText
+va (VaSet
+)
+xt "0,-1400,11000,-200"
+st "b0: BLOCK (guard)"
+tm "FrameTitleTextMgr"
+)
+)
+seqNum (FrameSequenceNumber
+ps "TopLeftStrategy"
+shape (Rectangle
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+)
+xt "50,50,1050,1750"
+)
+num (Text
+va (VaSet
+)
+xt "200,300,600,1300"
+st "1"
+blo "200,1100"
+tm "FrameSeqNumMgr"
+)
+)
+decls (MlTextGroup
+ps "BottomRightOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*194 (Text
+va (VaSet
+font "Verdana,8,1"
+)
+xt "11800,20000,21800,21000"
+st "Frame Declarations"
+blo "11800,20800"
+)
+*195 (MLText
+va (VaSet
+)
+xt "11800,21000,11800,21000"
+tm "BdFrameDeclTextMgr"
+)
+]
+)
+style 3
+)
+defaultSaCptPort (CptPort
+ps "OnEdgeStrategy"
+shape (Triangle
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "0,0,750,750"
+)
+tg (CPTG
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+va (VaSet
+)
+xt "0,750,2800,1950"
+st "Port"
+blo "0,1750"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "Port"
+t ""
+o 0
+)
+)
+)
+defaultSaCptPortBuffer (CptPort
+ps "OnEdgeStrategy"
+shape (Diamond
+va (VaSet
+vasetType 1
+fg "65535,65535,65535"
+)
+xt "0,0,750,750"
+)
+tg (CPTG
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+va (VaSet
+)
+xt "0,750,2800,1950"
+st "Port"
+blo "0,1750"
+)
+)
+thePort (LogicalPort
+m 3
+decl (Decl
+n "Port"
+t ""
+o 0
+)
+)
+)
+defaultDeclText (MLText
+va (VaSet
+isHidden 1
+font "Courier New,9,0"
+)
+)
+archDeclarativeBlock (BdArchDeclBlock
+uid 1,0
+stg "BdArchDeclBlockLS"
+declLabel (Text
+uid 2,0
+va (VaSet
+font "Verdana,8,1"
+)
+xt "29000,26800,36000,27800"
+st "Declarations"
+blo "29000,27600"
+)
+portLabel (Text
+uid 3,0
+va (VaSet
+isHidden 1
+font "Verdana,8,1"
+)
+xt "29000,28000,32400,29000"
+st "Ports:"
+blo "29000,28800"
+)
+preUserLabel (Text
+uid 4,0
+va (VaSet
+font "Verdana,8,1"
+)
+xt "29000,27800,33800,28800"
+st "Pre User:"
+blo "29000,28600"
+)
+preUserText (MLText
+uid 5,0
+va (VaSet
+font "Courier New,10,0"
+)
+xt "31000,28800,67600,49200"
+st "constant periph1Index: positive := 1;
+constant periph2Index: positive := periph1Index+1;
+
+constant ahbMemoryLocation : ahbMemoryLocationVector := (
+  periph1Index => (
+    baseAddress => 16#0000#,
+    addressMask => 16#10000# - 16#0010#
+  ),
+  periph2Index => (
+    baseAddress => 16#0010#,
+    addressMask => 16#10000# - 16#0002#
+  ),
+  others => (
+    baseAddress => 16#FFFF#,
+    addressMask => 16#0000#
+  )
+);"
+tm "BdDeclarativeTextMgr"
+)
+diagSignalLabel (Text
+uid 6,0
+va (VaSet
+isHidden 1
+font "Verdana,8,1"
+)
+xt "29000,28000,38000,29000"
+st "Diagram Signals:"
+blo "29000,28800"
+)
+postUserLabel (Text
+uid 7,0
+va (VaSet
+isHidden 1
+font "Verdana,8,1"
+)
+xt "29000,28000,35000,29000"
+st "Post User:"
+blo "29000,28800"
+)
+postUserText (MLText
+uid 8,0
+va (VaSet
+isHidden 1
+font "Courier New,10,0"
+)
+xt "31000,42400,31000,42400"
+tm "BdDeclarativeTextMgr"
+)
+)
+commonDM (CommonDM
+ldm (LogicalDM
+suid 149,0
+usingSuid 1
+emptyRow *196 (LEmptyRow
+)
+uid 3310,0
+optionalChildren [
+*197 (RefLabelRowHdr
+)
+*198 (TitleRowHdr
+)
+*199 (FilterRowHdr
+)
+*200 (RefLabelColHdr
+tm "RefLabelColHdrMgr"
+)
+*201 (RowExpandColHdr
+tm "RowExpandColHdrMgr"
+)
+*202 (GroupColHdr
+tm "GroupColHdrMgr"
+)
+*203 (NameColHdr
+tm "BlockDiagramNameColHdrMgr"
+)
+*204 (ModeColHdr
+tm "BlockDiagramModeColHdrMgr"
+)
+*205 (TypeColHdr
+tm "BlockDiagramTypeColHdrMgr"
+)
+*206 (BoundsColHdr
+tm "BlockDiagramBoundsColHdrMgr"
+)
+*207 (InitColHdr
+tm "BlockDiagramInitColHdrMgr"
+)
+*208 (EolColHdr
+tm "BlockDiagramEolColHdrMgr"
+)
+*209 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "reset"
+t "std_ulogic"
+o 27
+suid 107,0
+)
+)
+uid 13141,0
+)
+*210 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "clock"
+t "std_ulogic"
+o 1
+suid 108,0
+)
+)
+uid 13143,0
+)
+*211 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "upAddress"
+t "unsigned"
+b "(ahbAddressBitNb-1 DOWNTO 0)"
+o 28
+suid 109,0
+)
+)
+uid 13145,0
+)
+*212 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "upDataOut"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 30
+suid 110,0
+)
+)
+uid 13147,0
+)
+*213 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "upDataIn"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 29
+suid 111,0
+)
+)
+uid 13149,0
+)
+*214 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "upReadStrobe"
+t "std_uLogic"
+o 31
+suid 112,0
+)
+)
+uid 13151,0
+)
+*215 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "upWriteStrobe"
+t "std_uLogic"
+o 32
+suid 113,0
+)
+)
+uid 13153,0
+)
+*216 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hAddr"
+t "unsigned"
+b "(ahbAddressBitNb-1 DOWNTO 0)"
+o 2
+suid 114,0
+)
+)
+uid 13155,0
+)
+*217 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hWData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 25
+suid 115,0
+)
+)
+uid 13157,0
+)
+*218 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hRData"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 7
+suid 116,0
+)
+)
+uid 13159,0
+)
+*219 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hTrans"
+t "std_ulogic_vector"
+b "(ahbTransBitNb-1 DOWNTO 0)"
+o 24
+suid 117,0
+)
+)
+uid 13161,0
+)
+*220 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hSize"
+t "std_ulogic_vector"
+b "(ahbSizeBitNb-1 DOWNTO 0)"
+o 23
+suid 118,0
+)
+)
+uid 13163,0
+)
+*221 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hBurst"
+t "std_ulogic_vector"
+b "(ahbBurstBitNb-1 DOWNTO 0)"
+o 3
+suid 119,0
+)
+)
+uid 13165,0
+)
+*222 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hProt"
+t "std_ulogic_vector"
+b "(ahbProtBitNb-1 DOWNTO 0)"
+o 6
+suid 120,0
+)
+)
+uid 13167,0
+)
+*223 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hWrite"
+t "std_uLogic"
+o 26
+suid 121,0
+)
+)
+uid 13169,0
+)
+*224 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hReady"
+t "std_uLogic"
+o 11
+suid 122,0
+)
+)
+uid 13171,0
+)
+*225 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hMastLock"
+t "std_uLogic"
+o 5
+suid 123,0
+)
+)
+uid 13173,0
+)
+*226 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hResp"
+t "std_uLogic"
+o 16
+suid 124,0
+)
+)
+uid 13175,0
+)
+*227 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hClk"
+t "std_uLogic"
+o 4
+suid 125,0
+)
+)
+uid 13177,0
+)
+*228 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hReset_n"
+t "std_uLogic"
+o 15
+suid 126,0
+)
+)
+uid 13179,0
+)
+*229 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hSelV"
+t "std_ulogic_vector"
+b "(1 TO ahbSlaveNb)"
+o 22
+suid 127,0
+)
+)
+uid 13181,0
+)
+*230 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hRDataV"
+t "ahbDataVector"
+o 10
+suid 128,0
+)
+)
+uid 13183,0
+)
+*231 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hReadyV"
+t "std_logic_vector"
+b "(1 TO ahbSlaveNb)"
+o 14
+suid 129,0
+)
+)
+uid 13185,0
+)
+*232 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hRespV"
+t "std_logic_vector"
+b "(1 TO ahbSlaveNb)"
+o 19
+suid 130,0
+)
+)
+uid 13187,0
+)
+*233 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hSelPeriph1"
+t "std_uLogic"
+o 20
+suid 142,0
+)
+)
+uid 13430,0
+)
+*234 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hRDataPeriph1"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 8
+suid 143,0
+)
+)
+uid 13432,0
+)
+*235 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hReadyPeriph1"
+t "std_uLogic"
+o 12
+suid 144,0
+)
+)
+uid 13434,0
+)
+*236 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hRespPeriph1"
+t "std_uLogic"
+o 17
+suid 145,0
+)
+)
+uid 13436,0
+)
+*237 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hSelPeriph2"
+t "std_uLogic"
+o 21
+suid 146,0
+)
+)
+uid 13438,0
+)
+*238 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hRDataPeriph2"
+t "std_ulogic_vector"
+b "(ahbDataBitNb-1 DOWNTO 0)"
+o 9
+suid 147,0
+)
+)
+uid 13440,0
+)
+*239 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hReadyPeriph2"
+t "std_uLogic"
+o 13
+suid 148,0
+)
+)
+uid 13442,0
+)
+*240 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "hRespPeriph2"
+t "std_uLogic"
+o 18
+suid 149,0
+)
+)
+uid 13444,0
+)
+]
+)
+pdm (PhysicalDM
+displayShortBounds 1
+editShortBounds 1
+uid 3323,0
+optionalChildren [
+*241 (Sheet
+sheetRow (SheetRow
+headerVa (MVa
+cellColor "49152,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+cellVa (MVa
+cellColor "65535,65535,65535"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+groupVa (MVa
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+emptyMRCItem *242 (MRCItem
+litem &196
+pos 32
+dimension 20
+)
+uid 3325,0
+optionalChildren [
+*243 (MRCItem
+litem &197
+pos 0
+dimension 20
+uid 3326,0
+)
+*244 (MRCItem
+litem &198
+pos 1
+dimension 23
+uid 3327,0
+)
+*245 (MRCItem
+litem &199
+pos 2
+hidden 1
+dimension 20
+uid 3328,0
+)
+*246 (MRCItem
+litem &209
+pos 0
+dimension 20
+uid 13142,0
+)
+*247 (MRCItem
+litem &210
+pos 1
+dimension 20
+uid 13144,0
+)
+*248 (MRCItem
+litem &211
+pos 2
+dimension 20
+uid 13146,0
+)
+*249 (MRCItem
+litem &212
+pos 3
+dimension 20
+uid 13148,0
+)
+*250 (MRCItem
+litem &213
+pos 4
+dimension 20
+uid 13150,0
+)
+*251 (MRCItem
+litem &214
+pos 5
+dimension 20
+uid 13152,0
+)
+*252 (MRCItem
+litem &215
+pos 6
+dimension 20
+uid 13154,0
+)
+*253 (MRCItem
+litem &216
+pos 7
+dimension 20
+uid 13156,0
+)
+*254 (MRCItem
+litem &217
+pos 8
+dimension 20
+uid 13158,0
+)
+*255 (MRCItem
+litem &218
+pos 9
+dimension 20
+uid 13160,0
+)
+*256 (MRCItem
+litem &219
+pos 10
+dimension 20
+uid 13162,0
+)
+*257 (MRCItem
+litem &220
+pos 11
+dimension 20
+uid 13164,0
+)
+*258 (MRCItem
+litem &221
+pos 12
+dimension 20
+uid 13166,0
+)
+*259 (MRCItem
+litem &222
+pos 13
+dimension 20
+uid 13168,0
+)
+*260 (MRCItem
+litem &223
+pos 14
+dimension 20
+uid 13170,0
+)
+*261 (MRCItem
+litem &224
+pos 15
+dimension 20
+uid 13172,0
+)
+*262 (MRCItem
+litem &225
+pos 16
+dimension 20
+uid 13174,0
+)
+*263 (MRCItem
+litem &226
+pos 17
+dimension 20
+uid 13176,0
+)
+*264 (MRCItem
+litem &227
+pos 18
+dimension 20
+uid 13178,0
+)
+*265 (MRCItem
+litem &228
+pos 19
+dimension 20
+uid 13180,0
+)
+*266 (MRCItem
+litem &229
+pos 20
+dimension 20
+uid 13182,0
+)
+*267 (MRCItem
+litem &230
+pos 21
+dimension 20
+uid 13184,0
+)
+*268 (MRCItem
+litem &231
+pos 22
+dimension 20
+uid 13186,0
+)
+*269 (MRCItem
+litem &232
+pos 23
+dimension 20
+uid 13188,0
+)
+*270 (MRCItem
+litem &233
+pos 24
+dimension 20
+uid 13431,0
+)
+*271 (MRCItem
+litem &234
+pos 25
+dimension 20
+uid 13433,0
+)
+*272 (MRCItem
+litem &235
+pos 26
+dimension 20
+uid 13435,0
+)
+*273 (MRCItem
+litem &236
+pos 27
+dimension 20
+uid 13437,0
+)
+*274 (MRCItem
+litem &237
+pos 28
+dimension 20
+uid 13439,0
+)
+*275 (MRCItem
+litem &238
+pos 29
+dimension 20
+uid 13441,0
+)
+*276 (MRCItem
+litem &239
+pos 30
+dimension 20
+uid 13443,0
+)
+*277 (MRCItem
+litem &240
+pos 31
+dimension 20
+uid 13445,0
+)
+]
+)
+sheetCol (SheetCol
+propVa (MVa
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+textAngle 90
+)
+uid 3329,0
+optionalChildren [
+*278 (MRCItem
+litem &200
+pos 0
+dimension 20
+uid 3330,0
+)
+*279 (MRCItem
+litem &202
+pos 1
+dimension 50
+uid 3331,0
+)
+*280 (MRCItem
+litem &203
+pos 2
+dimension 100
+uid 3332,0
+)
+*281 (MRCItem
+litem &204
+pos 3
+dimension 50
+uid 3333,0
+)
+*282 (MRCItem
+litem &205
+pos 4
+dimension 100
+uid 3334,0
+)
+*283 (MRCItem
+litem &206
+pos 5
+dimension 100
+uid 3335,0
+)
+*284 (MRCItem
+litem &207
+pos 6
+dimension 50
+uid 3336,0
+)
+*285 (MRCItem
+litem &208
+pos 7
+dimension 80
+uid 3337,0
+)
+]
+)
+fixedCol 4
+fixedRow 2
+name "Ports"
+uid 3324,0
+vaOverrides [
+]
+)
+]
+)
+uid 3309,0
+)
+genericsCommonDM (CommonDM
+ldm (LogicalDM
+emptyRow *286 (LEmptyRow
+)
+uid 3339,0
+optionalChildren [
+*287 (RefLabelRowHdr
+)
+*288 (TitleRowHdr
+)
+*289 (FilterRowHdr
+)
+*290 (RefLabelColHdr
+tm "RefLabelColHdrMgr"
+)
+*291 (RowExpandColHdr
+tm "RowExpandColHdrMgr"
+)
+*292 (GroupColHdr
+tm "GroupColHdrMgr"
+)
+*293 (NameColHdr
+tm "GenericNameColHdrMgr"
+)
+*294 (TypeColHdr
+tm "GenericTypeColHdrMgr"
+)
+*295 (InitColHdr
+tm "GenericValueColHdrMgr"
+)
+*296 (PragmaColHdr
+tm "GenericPragmaColHdrMgr"
+)
+*297 (EolColHdr
+tm "GenericEolColHdrMgr"
+)
+]
+)
+pdm (PhysicalDM
+uid 3351,0
+optionalChildren [
+*298 (Sheet
+sheetRow (SheetRow
+headerVa (MVa
+cellColor "49152,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+cellVa (MVa
+cellColor "65535,65535,65535"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+groupVa (MVa
+cellColor "39936,56832,65280"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+)
+emptyMRCItem *299 (MRCItem
+litem &286
+pos 0
+dimension 20
+)
+uid 3353,0
+optionalChildren [
+*300 (MRCItem
+litem &287
+pos 0
+dimension 20
+uid 3354,0
+)
+*301 (MRCItem
+litem &288
+pos 1
+dimension 23
+uid 3355,0
+)
+*302 (MRCItem
+litem &289
+pos 2
+hidden 1
+dimension 20
+uid 3356,0
+)
+]
+)
+sheetCol (SheetCol
+propVa (MVa
+cellColor "0,49152,49152"
+fontColor "0,0,0"
+font "Tahoma,10,0"
+textAngle 90
+)
+uid 3357,0
+optionalChildren [
+*303 (MRCItem
+litem &290
+pos 0
+dimension 20
+uid 3358,0
+)
+*304 (MRCItem
+litem &292
+pos 1
+dimension 50
+uid 3359,0
+)
+*305 (MRCItem
+litem &293
+pos 2
+dimension 100
+uid 3360,0
+)
+*306 (MRCItem
+litem &294
+pos 3
+dimension 100
+uid 3361,0
+)
+*307 (MRCItem
+litem &295
+pos 4
+dimension 50
+uid 3362,0
+)
+*308 (MRCItem
+litem &296
+pos 5
+dimension 50
+uid 3363,0
+)
+*309 (MRCItem
+litem &297
+pos 6
+dimension 80
+uid 3364,0
+)
+]
+)
+fixedCol 3
+fixedRow 2
+name "Ports"
+uid 3352,0
+vaOverrides [
+]
+)
+]
+)
+uid 3338,0
+type 1
+)
+activeModelName "BlockDiag"
+)

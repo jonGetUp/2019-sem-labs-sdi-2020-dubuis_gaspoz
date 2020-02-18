@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Spartan3E
+DEFAULT_FILE atom blockRAM_Spartan3E.vhd

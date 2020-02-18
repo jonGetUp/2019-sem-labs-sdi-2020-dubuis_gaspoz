@@ -1,0 +1,23 @@
+#-------------------------------------------------------------------------------
+# Clock and reset
+#
+NET "clock"             LOC = "A10";
+NET "reset_n"           LOC = "D3"      | PULLUP;
+
+#-------------------------------------------------------------------------------
+# UART
+#
+NET "RxD"               LOC = "V2" ;    # female DB9 on J9
+NET "RxD_synch"         LOC = "B6" ;
+NET "TxD"               LOC = "T1" ;
+
+#-------------------------------------------------------------------------------
+# Morse board
+#
+NET "morseOut"          LOC = "A6" ;
+NET "morseIn"           LOC = "D5" ;
+NET "morseEnvelope"     LOC = "C3" ;
+NET "ampOut"            LOC = "E2" ;
+NET "SCl"               LOC = "G5" ;
+NET "SDa"               LOC = "G4" ;
+

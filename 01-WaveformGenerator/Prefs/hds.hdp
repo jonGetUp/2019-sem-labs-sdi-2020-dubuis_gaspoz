@@ -1,0 +1,19 @@
+[Concat]
+[ModelSim]
+WaveformGenerator = $SCRATCH_DIR/WaveformGenerator
+WaveformGenerator_test = $SCRATCH_DIR/WaveformGenerator_test
+[hdl]
+ieee = $HDS_HOME/hdl_libs/ieee/hdl
+std = $HDS_HOME/hdl_libs/std/hdl
+WaveformGenerator = $HDS_PROJECT_DIR/../WaveformGenerator/hdl
+WaveformGenerator_test = $HDS_PROJECT_DIR/../WaveformGenerator_test/hdl
+[hds]
+ieee = $HDS_HOME/hdl_libs/ieee/hds
+std = $HDS_HOME/hdl_libs/std/hds
+WaveformGenerator = $HDS_PROJECT_DIR/../WaveformGenerator/hds
+WaveformGenerator_test = $HDS_PROJECT_DIR/../WaveformGenerator_test/hds
+[library_type]
+ieee = standard
+std = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

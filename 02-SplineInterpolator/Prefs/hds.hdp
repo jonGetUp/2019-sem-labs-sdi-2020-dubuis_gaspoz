@@ -1,0 +1,25 @@
+[Concat]
+[ModelSim]
+SplineInterpolator = $SCRATCH_DIR/SplineInterpolator
+SplineInterpolator_test = $SCRATCH_DIR/SplineInterpolator_test
+WaveformGenerator = $SCRATCH_DIR/WaveformGenerator
+WaveformGenerator_test = $SCRATCH_DIR/WaveformGenerator_test
+[hdl]
+ieee = $HDS_HOME/hdl_libs/ieee/hdl
+SplineInterpolator = $HDS_PROJECT_DIR/../SplineInterpolator/hdl
+SplineInterpolator_test = $HDS_PROJECT_DIR/../SplineInterpolator_test/hdl
+std = $HDS_HOME/hdl_libs/std/hdl
+WaveformGenerator = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator/hdl
+WaveformGenerator_test = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator_test/hdl
+[hds]
+ieee = $HDS_HOME/hdl_libs/ieee/hds
+SplineInterpolator = $HDS_PROJECT_DIR/../SplineInterpolator/hds
+SplineInterpolator_test = $HDS_PROJECT_DIR/../SplineInterpolator_test/hds
+std = $HDS_HOME/hdl_libs/std/hds
+WaveformGenerator = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator/hds
+WaveformGenerator_test = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator_test/hds
+[library_type]
+ieee = standard
+std = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

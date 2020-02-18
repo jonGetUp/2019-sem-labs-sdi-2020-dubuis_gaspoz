@@ -1,0 +1,23 @@
+[Concat]
+Board = $HDS_PROJECT_DIR/../Board/concat
+[ModelSim]
+Board = $SCRATCH_DIR/Board
+PipelinedOperators = $SCRATCH_DIR/PipelinedOperators
+PipelinedOperators_test = $SCRATCH_DIR/PipelinedOperators_test
+[hdl]
+Board = $HDS_PROJECT_DIR/../Board/hdl
+ieee = $HDS_HOME/hdl_libs/ieee/hdl
+PipelinedOperators = $HDS_PROJECT_DIR/../PipelinedOperators/hdl
+PipelinedOperators_test = $HDS_PROJECT_DIR/../PipelinedOperators_test/hdl
+std = $HDS_HOME/hdl_libs/std/hdl
+[hds]
+Board = $HDS_PROJECT_DIR/../Board/hds
+ieee = $HDS_HOME/hdl_libs/ieee/hds
+PipelinedOperators = $HDS_PROJECT_DIR/../PipelinedOperators/hds
+PipelinedOperators_test = $HDS_PROJECT_DIR/../PipelinedOperators_test/hds
+std = $HDS_HOME/hdl_libs/std/hds
+[library_type]
+ieee = standard
+std = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

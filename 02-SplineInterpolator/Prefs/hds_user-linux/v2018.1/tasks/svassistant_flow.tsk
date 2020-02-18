@@ -1,0 +1,78 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "SVAssistant Flow"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_svassistant.bmp"
+hasBitmap 1
+tooltip "Invokes SVAssistant Flow"
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 1
+onToolbar 1
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTaskRef
+TaskName "Generate"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:Generate"
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "SVAssistant"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_svassistant.bmp"
+hasBitmap 1
+tooltip "Invokes SVAssistant"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"1"
+"customPrompt"
+""
+"initialDir"
+""
+"noNeedForThroughDesignRoot"
+"1"
+"noNeedForUseViewSpecificSettings"
+"1"
+"noSettingsDlg"
+"1"
+"promptForRunSettings"
+"0"
+"runnableObject"
+"SvAssistantInvoke"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

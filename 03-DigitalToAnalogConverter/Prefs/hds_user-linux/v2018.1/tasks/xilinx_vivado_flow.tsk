@@ -1,0 +1,72 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "Xilinx Vivado Flow"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_xilinx_vivado.bmp"
+hasBitmap 1
+tooltip "Generate and runs Xilinx Vivado wizard"
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTaskRef
+TaskName "Generate"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:Generate"
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Xilinx Vivado"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_xilinx_vivado.bmp"
+hasBitmap 1
+tooltip "HDS integration with Xilinx Vivado"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"1"
+"runnableObject"
+"XilinxVivado"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"1"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+)
+]
+)

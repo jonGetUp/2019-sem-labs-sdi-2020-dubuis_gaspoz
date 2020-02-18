@@ -1,0 +1,57 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "DesignChecker Flow"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_designanalyst.bmp"
+hasBitmap 1
+tooltip "Generate and runs DesignChecker"
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 1
+onToolbar 1
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTaskRef
+TaskName "Generate"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:Generate"
+)
+(HDSTaskRef
+TaskName "DesignChecker"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"forceGui"
+"NO_FORCE"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:DesignChecker"
+)
+]
+)

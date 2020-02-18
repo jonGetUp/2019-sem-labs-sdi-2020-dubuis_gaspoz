@@ -1,0 +1,71 @@
+[Concat]
+Board = $HDS_PROJECT_DIR/../Board/concat
+[ModelSim]
+AhbLite = $SCRATCH_DIR/AhbLite
+AhbLite_test = $SCRATCH_DIR/AhbLite_test
+AhbLiteComponents = $SCRATCH_DIR/AhbLiteComponents
+AhbLiteComponents_test = $SCRATCH_DIR/AhbLiteComponents_test
+Board = $SCRATCH_DIR/Board
+Common = $SCRATCH_DIR/Common
+Common_test = $SCRATCH_DIR/Common_test
+DigitalToAnalogConverter = $SCRATCH_DIR/DigitalToAnalogConverter
+DigitalToAnalogConverter_test = $SCRATCH_DIR/DigitalToAnalogConverter_test
+NanoBlaze = $SCRATCH_DIR/NanoBlaze
+NanoBlaze_test = $SCRATCH_DIR/NanoBlaze_test
+RiscV = $SCRATCH_DIR/RiscV
+RiscV_test = $SCRATCH_DIR/RiscV_test
+SplineInterpolator = $SCRATCH_DIR/SplineInterpolator
+SplineInterpolator_test = $SCRATCH_DIR/SplineInterpolator_test
+SystemOnChip = $SCRATCH_DIR/SystemOnChip
+SystemOnChip_test = $SCRATCH_DIR/SystemOnChip_test
+WaveformGenerator = $SCRATCH_DIR/WaveformGenerator
+WaveformGenerator_test = $SCRATCH_DIR/WaveformGenerator_test
+[hdl]
+AhbLite = $HEI_LIBS_DIR/AhbLite/hdl
+AhbLite_test = $HEI_LIBS_DIR/AhbLite_test/hdl
+AhbLiteComponents = $HDS_PROJECT_DIR/../AhbLiteComponents/hdl
+AhbLiteComponents_test = $HDS_PROJECT_DIR/../AhbLiteComponents_test/hdl
+Board = $HDS_PROJECT_DIR/../Board/hdl
+Common = $HEI_LIBS_DIR/Common/hdl
+Common_test = $HEI_LIBS_DIR/Common_test/hdl
+DigitalToAnalogConverter = $HDS_PROJECT_DIR/../../03-DigitalToAnalogConverter/DigitalToAnalogConverter/hdl
+DigitalToAnalogConverter_test = $HDS_PROJECT_DIR/../../03-DigitalToAnalogConverter/DigitalToAnalogConverter_test/hdl
+NanoBlaze = $HEI_LIBS_DIR/NanoBlaze/hdl
+NanoBlaze_test = $HEI_LIBS_DIR/NanoBlaze_test/hdl
+RiscV = $HEI_LIBS_DIR/RiscV/hdl
+RiscV_test = $HEI_LIBS_DIR/RiscV_test/hdl
+ieee = $HDS_HOME/hdl_libs/ieee/hdl
+SplineInterpolator = $HDS_PROJECT_DIR/../../02-SplineInterpolator/SplineInterpolator/hdl
+SplineInterpolator_test = $HDS_PROJECT_DIR/../../02-SplineInterpolator/SplineInterpolator_test/hdl
+SystemOnChip = $HDS_PROJECT_DIR/../SystemOnChip/hdl
+SystemOnChip_test = $HDS_PROJECT_DIR/../SystemOnChip_test/hdl
+std = $HDS_HOME/hdl_libs/std/hdl
+WaveformGenerator = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator/hdl
+WaveformGenerator_test = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator_test/hdl
+[hds]
+AhbLite = $HEI_LIBS_DIR/AhbLite/hds
+AhbLite_test = $HEI_LIBS_DIR/AhbLite_test/hds
+AhbLiteComponents = $HDS_PROJECT_DIR/../AhbLiteComponents/hds
+AhbLiteComponents_test = $HDS_PROJECT_DIR/../AhbLiteComponents_test/hds
+Board = $HDS_PROJECT_DIR/../Board/hds
+Common = $HEI_LIBS_DIR/Common/hds
+Common_test = $HEI_LIBS_DIR/Common_test/hds
+DigitalToAnalogConverter = $HDS_PROJECT_DIR/../../03-DigitalToAnalogConverter/DigitalToAnalogConverter/hds
+DigitalToAnalogConverter_test = $HDS_PROJECT_DIR/../../03-DigitalToAnalogConverter/DigitalToAnalogConverter_test/hds
+NanoBlaze = $HEI_LIBS_DIR/NanoBlaze/hds
+NanoBlaze_test = $HEI_LIBS_DIR/NanoBlaze_test/hds
+RiscV = $HEI_LIBS_DIR/RiscV/hds
+RiscV_test = $HEI_LIBS_DIR/RiscV_test/hds
+ieee = $HDS_HOME/hdl_libs/ieee/hds
+SplineInterpolator = $HDS_PROJECT_DIR/../../02-SplineInterpolator/SplineInterpolator/hds
+SplineInterpolator_test = $HDS_PROJECT_DIR/../../02-SplineInterpolator/SplineInterpolator_test/hds
+SystemOnChip = $HDS_PROJECT_DIR/../SystemOnChip/hds
+SystemOnChip_test = $HDS_PROJECT_DIR/../SystemOnChip_test/hds
+std = $HDS_HOME/hdl_libs/std/hds
+WaveformGenerator = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator/hds
+WaveformGenerator_test = $HDS_PROJECT_DIR/../../01-WaveformGenerator/WaveformGenerator_test/hds
+[library_type]
+ieee = standard
+std = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

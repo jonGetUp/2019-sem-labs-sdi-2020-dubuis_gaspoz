@@ -1,0 +1,72 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "I/O Design Flow"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_blpro.bmp"
+hasBitmap 1
+tooltip "Generate and runs BoardLink Pro to define pin assignments"
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 1
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTaskRef
+TaskName "Generate"
+bitmap ""
+hasBitmap 1
+tooltip ""
+taskSettings [
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 1
+reffedTaskName "USER:Generate"
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "I/O Design"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_blpro.bmp"
+hasBitmap 1
+tooltip "Runs BoardLink Pro to define pin assignments"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+""
+"promptForRunSettings"
+"0"
+"runnableObject"
+"BoardLinkPro"
+"runnableObjectType"
+"tcl_plugin"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)
